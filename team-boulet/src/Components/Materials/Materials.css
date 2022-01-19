@@ -1,0 +1,15 @@
+body {
+  background-image: url('../../Assets/imageonline-co-resizedimage.png');    
+  position:fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+      background-size: cover;
+
+  
+  }
+}

@@ -1,10 +1,12 @@
 import React from 'react';
+import './Materials.css'
 
 const Materials = () => {
     return (
     <div className='m'>
-        <h1> 
-
+        <div className="m-body">
+        <h1> Que vais-je faire dans cette pieces ? </h1>
+        </div>
     </div>
 )};
 
