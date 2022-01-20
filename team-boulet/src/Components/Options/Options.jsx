@@ -4,6 +4,7 @@ import { useApp } from "../../Contexts/AppProvider";
 import { useNavigate } from "react-router";
 import "./Options.css";
 import CheckoutSteps from "../CheckoutSteps/CheckoutSteps";
+import { useNavigate } from 'react-router-dom';
 
 const Options = () => {
   const [valueFloor, setValueFloor] = useState(1);
@@ -25,11 +26,20 @@ const Options = () => {
     setProduct3(e.target.value);
   }
 
+  const navigator = useNavigate();
+
+const handlechange = () => {
+  navigator('/cross-selling');
+
+}
   return (
     <div>
-      <CheckoutSteps step1 step2 step3></CheckoutSteps>
-      <div className="main-container">
-        <h1>My Options</h1>
+
+    <CheckoutSteps step1 step2 step3></CheckoutSteps>
+    <div className="main-container-home2">
+      
+      <h1 className="titre-home">My Options</h1>
+
 
         <div className="option-container">
           {room[0].materials
@@ -216,12 +226,17 @@ const Options = () => {
                   <p className="conseil">My ManoMano Advice</p>
                 </a>
               </div>
-            ))}
-        </div>
-          <button className="button1" onClick={() => navigate('/cross-selling')}>
-            Let's Go
-          </button>
-      </div>
+
+              <a target="_blank" href={el.conseil} rel="noreferrer">
+                <p className="conseil">My ManoMano Advice</p>
+              </a>
+            </div>
+           
+          ))} 
+      </div><div className="Letsgo">
+
+            <button className="button-sub1" onClick={handlechange} >Let's Go</button>
+          </div>
     </div>
   );
 };

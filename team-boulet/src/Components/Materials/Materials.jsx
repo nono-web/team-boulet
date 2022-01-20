@@ -38,8 +38,9 @@ const Materials = () => {
   return (
     <div className="m">
       <CheckoutSteps step1 step2></CheckoutSteps>
-      <div className="m-body">
+      <div className="main-container-home2">
         <h1 className='m-h1'> What will I do in this room ? </h1>
+        <div className="main-container-home-ones">
         <div className="m-button-container">
           <button className="m-button" onClick={() => setShowButton(!showButton)}>
           Floor
@@ -66,7 +67,7 @@ const Materials = () => {
         </div>
         <div className="m-button-container3">
           <button className="m-button" onClick={() => setShowButton3(!showButton3)}>
-          Lightings
+          Lightnings
           </button>
           {showButton3 ? (
            <div className='m-2'>
@@ -107,10 +108,10 @@ const Materials = () => {
           ) : null}
           <div className="Letsgo">
 
-            <button className="button1" onClick={handleSubmitMaterials}>Let's Go</button>
+            <button className="button-sub1" onClick={handleSubmitMaterials}>Let's Go</button>
           </div>
         </div>
-      </div>
+      </div></div>
     </div>
   );
 };
