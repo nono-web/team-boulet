@@ -17,6 +17,7 @@ const Cart = () => {
     product1,
     product2,
     product3,
+    coaching
   } = useApp();
 
   const navigate = useNavigate();
@@ -26,7 +27,9 @@ const Cart = () => {
       navigate('/')
   }
 
-  const total = parseInt(product1)+parseInt(product2)+parseInt(product3)+parseInt(package1)+parseInt(package2)+parseInt(package3);
+  const coachingCost = coaching == "Mano Pack: 5 €" ? 5 : coaching == "Mano Mano Pack: 50 €" ? 50 : 150;
+
+  const total = parseInt(product1)+parseInt(product2)+parseInt(product3)+parseInt(package1)+parseInt(package2)+parseInt(package3)+coachingCost;
 
   return (
     <div>
@@ -43,7 +46,8 @@ const Cart = () => {
         <div className="product-line">{package2 !== '0' ? `${choice2}: ${package2} €` : ""}</div>
         <div className="product-line">{package3 !== '0' ? `${choice3}: ${package3} €` : ""}</div>
         <button onClick={()=> navigate('/cross-selling')}>Back to Packages choice</button>
-
+        <h3>My Coaching</h3>
+        <div className="product-line">{coaching ? coaching : "0€"}</div>
         <h3>Total</h3>
         <div className="total">{total} €</div>
         <button className="button1">

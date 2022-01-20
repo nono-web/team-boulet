@@ -133,6 +133,20 @@ const AppProvider = ({ children }) => {
     }
   }, [package3]);
 
+  const [coaching, setCoaching] = useState(
+    localStorage.getItem("coaching")
+      ? JSON.parse(localStorage.getItem("coaching"))
+      : null
+  );
+
+  useEffect(() => {
+    if (coaching) {
+      localStorage.setItem("coaching", JSON.stringify(coaching));
+    } else {
+      localStorage.removeItem("coaching");
+    }
+  }, [coaching]);
+
   useEffect(() => {
     setTotal(() => {
       const array = cart.map((article) => article.quantity);
@@ -169,8 +183,10 @@ const AppProvider = ({ children }) => {
       setPackage2,
       package3,
       setPackage3,
+      coaching,
+      setCoaching
     }),
-    [cart, total, choice1, choice2, choice3, product1, product2, product3, package1, package2, package3]
+    [cart, total, choice1, choice2, choice3, product1, product2, product3, package1, package2, package3, coaching]
   );
 
   return (
