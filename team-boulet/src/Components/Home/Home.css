@@ -1,0 +1,78 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70vw;
+  height: 90vh;
+  margin: 5vh 5vw;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background-color: #fff;
+}
+
+.titre-home {
+  font-size: 40px;
+}
+
+.txt-intro{
+  font-size: 20px;
+
+}
+
+.txt-txt {
+  font-size: 18px;
+}
+
+.txt-question {
+  font-weight: bold;
+}
+
+.rooms-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rooms {
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid var(--ligthBlue);
+  background-color: #fff;
+}
+
+.rooms:hover {
+  border: 1px solid var(--darkBlue);
+  cursor: pointer;
+}
+
+.rooms:focus {
+  color: #fff;
+  background-color: var(--ligthBlue);
+}
+
+.button-sub {
+  width: 300px;
+  padding: 15px;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--ligthBlue);
+  border: 1px solid var(--ligthBlue);
+  cursor: pointer;
+}
+
+.button-sub:hover {
+  color: #fff;
+  background-color: var(--darkBlue);
+  border: 1px solid var(--darkBlue);
+  cursor: pointer;
+}
+
+.button-sub:focus {
+  background-color: var(--ligthBlue);
+}
