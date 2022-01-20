@@ -58,7 +58,7 @@ const Coaching = () => {
   
         </div>
       </div>
-      <button className="button1" onClick={()=>handleSubmitCoaching()}>Let's DIY</button>
+      <button className="button1" onClick={()=>handleSubmitCoaching()} className='rooms-container' className='button-sub' >Let's DIY</button>
     </div>
   </div>
   </>

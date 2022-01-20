@@ -36,7 +36,7 @@ const Cart = () => {
       <CheckoutSteps step1 step2 step3 step4 step5 step6></CheckoutSteps>
       <div className="main-container1">
         <h2>My  Cart</h2>
-      </div>
+      
 
       <div className="container2">
         <h3>My materials</h3>
@@ -63,13 +63,14 @@ const Cart = () => {
           <h3>Total {total} € </h3>
         </div>
 
-        <button className="button1">
+        <button className="button1" className='rooms-container' className='button-sub'>
             Let's DIY
           </button>
 
-          <button onClick={()=> handleStartover()}>Start another project</button>
+          <button onClick={()=> handleStartover()} >Start another project</button>
 
       </div>
+    </div>
   );
 };
 
