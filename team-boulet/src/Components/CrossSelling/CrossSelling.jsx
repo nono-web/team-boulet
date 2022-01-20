@@ -17,11 +17,6 @@ const CrossSelling = () => {
   let [input6, setInput6] = useState(true);
   let [input7, setInput7] = useState(true);
   let [input8, setInput8] = useState(true);
-  let [input9, setInput9] = useState(true);
-  let [input10, setInput10] = useState(true);
-  let [input11, setInput11] = useState(true);
-  let [input12, setInput12] = useState(true);
-  let [input13, setInput13] = useState(true);
   let [input14, setInput14] = useState(true);
   let [input15, setInput15] = useState(true);
   let [input16, setInput16] = useState(true);
@@ -290,6 +285,7 @@ const CrossSelling = () => {
             </div>
           ))}
       </div>
+    </div>
     </div>
     </div>
   );
