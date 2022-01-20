@@ -33,19 +33,27 @@ const Cart = () => {
       <CheckoutSteps step1 step2 step3 step4 step5 step6></CheckoutSteps>
       <div className="main-container1">
         <h2>My  Cart</h2>
-        <h3>My materials</h3>
-        <div className="product-line">{choice1 ? `${choice1}: ${product1} €` : ""}</div>
-        <div className="product-line">{choice2 ? `${choice2}: ${product2} €` : ""}</div>
-        <div className="product-line">{choice3 ? `${choice3}: ${product3} €` : ""}</div>
-        <button onClick={()=> navigate('/materials')}>Back to Materials choice</button>
-        <h3>My starter packages</h3>
-        <div className="product-line">{package1 !== '0' ? `${choice1}: ${package1} €` : ""}</div>
-        <div className="product-line">{package2 !== '0' ? `${choice2}: ${package2} €` : ""}</div>
-        <div className="product-line">{package3 !== '0' ? `${choice3}: ${package3} €` : ""}</div>
-        <button onClick={()=> navigate('/cross-selling')}>Back to Packages choice</button>
 
-        <h3>Total</h3>
-        <div className="total">{total} €</div>
+        <div className="container2">
+          <h3 >My materials</h3>
+          <div className="product-line">{choice1 ? `${choice1}: ${product1} €` : ""}</div>
+          <div className="product-line">{choice2 ? `${choice2}: ${product2} €` : ""}</div>
+          <div className="product-line">{choice3 ? `${choice3}: ${product3} €` : ""}</div>
+          <button onClick={()=> navigate('/materials')}>Back to Materials choice</button>
+        </div>
+
+        <div className="container2">
+          <h3>My starter packages</h3>
+          <div className="product-line">{package1 !== '0' ? `${choice1}: ${package1} €` : ""}</div>
+          <div className="product-line">{package2 !== '0' ? `${choice2}: ${package2} €` : ""}</div>
+          <div className="product-line">{package3 !== '0' ? `${choice3}: ${package3} €` : ""}</div>
+          <button onClick={()=> navigate('/cross-selling')}>Back to Packages choice</button>
+        </div>
+
+        <div className="total">
+          <h3>Total {total} € </h3>
+        </div>
+        
         <button className="button1">
             Let's DIY
           </button>
