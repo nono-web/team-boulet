@@ -1,4 +1,6 @@
+
 body {
+
   background-image: url("../../assets/background.jpg");
   background-repeat: no-repeat;
   background-size: 200%;
@@ -7,6 +9,7 @@ body {
 
 .main-container {
   background-color: #ffffff;
+
   color: black;
   height: 100vh;
   width: 90vw;
@@ -27,6 +30,7 @@ body {
   font-size: 0.75rem;
 }
 
+
 .product-container img {
   width: 4rem;
 }
@@ -35,3 +39,4 @@ body {
 a {
   font-size: 0.8rem;
 }
+
