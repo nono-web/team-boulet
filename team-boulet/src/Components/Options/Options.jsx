@@ -12,7 +12,7 @@ const Options = () => {
 
       <div className="option-container">
         {room[0].materials
-          .filter((e) => e.material_name === "Wooden Floor")
+          .filter((e) => e.material_name === "Carpet")
           .map((el) => (
             <h3>{el.material_name}</h3>
           ))}
@@ -42,7 +42,7 @@ const Options = () => {
         </form>
 
         {room[0].materials
-          .filter((e) => e.material_name === "Wooden Floor")
+          .filter((e) => e.material_name === "Carpet")
           .map((el) => (
             <div>
               <div className="products-container">

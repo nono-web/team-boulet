@@ -29,13 +29,10 @@ const Materials = () => {
     isSelected1 ? setChoice1("Wooden Floor") : isSelected2 ? setChoice1("Carpet") : setChoice1("Floor tile"); 
     isSelected4 ? setChoice2("Wallpaper") : setChoice2("Paint");
     isSelected7 ? setChoice3("Inertia Radiator") : setChoice3("Fan Heater");
-    
-  const navigator = useNavigate();
-
-  const handleChange = () => {
     navigator('/options');
-
   }
+
+  const navigator = useNavigate();
 
   return (
     <div className="m">
@@ -47,11 +44,6 @@ const Materials = () => {
           </button>
           {showButton ? (
             <div className='m-2'>
-
-              <button className={isSelected1 ? "button-selected" : "button"} onClick={() => setIsSelected1(!isSelected1)}>Parquet</button>
-              <button className={isSelected2 ? "button-selected" : "button"} onClick={() => setIsSelected2(!isSelected2)}>Moquette</button>
-              <button className={isSelected3 ? "button-selected" : "button"} onClick={() => setIsSelected3(!isSelected3)}>Carrelage</button>
-
               <button className={isSelected1 ? "button-selected" : "button"} onClick={() => setIsSelected1(!isSelected1)} >Wooden Floor</button>
               <button className={isSelected2 ? "button-selected" : "button"} onClick={() => setIsSelected2(!isSelected2)}>Carpet</button>
               <button className={isSelected3 ? "button-selected" : "button"} onClick={() => setIsSelected3(!isSelected3)}>Floor tile</button>
