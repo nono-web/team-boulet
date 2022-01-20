@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import room from '../../data';
 
 import './Home.css';
 
 const homerooms = ['Bedroom', 'Bathroom', 'Kitchen', 'Living room', 'Garden'];
-
-
-
-// handleChangeRooms = {};
-const handleChangeLetsgo = {};
-
-// const listrooms = homerooms.map((listroom) => <button className='rooms' onChange={handleChangeRooms}>{listroom}</button>);
-// const listrooms = homerooms.map((listroom) => <div className='rooms'>{listroom}</div>);
 
 const Home = () => {
   const [ButtonRoom, setButtonRoom] = useState(false);
@@ -29,13 +22,10 @@ const Home = () => {
 
       <div className='rooms-container'>
         {homerooms.map((listroom) => <button className='rooms'onClick={selectRoom} >{listroom}</button>)}
+        <Link to='/materials'><button type='submit' className='button-sub' onClick={selectLetsgo}>Let's go !</button></Link>
       </div>
-      
-      <button type='submit' className='button-sub' onClick={selectLetsgo}>Let's go !</button>      
 
     </div>
-  )};
-
-    
+  )};    
 
 export default Home;
