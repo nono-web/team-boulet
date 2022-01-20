@@ -12,7 +12,7 @@
   background-color: #FFFFFF;
   color: black;
   height: 90vh;
-  width: 80vw;
+  width: 70vw;
   margin: 5vh 5vw;
   padding: 20px;
 }
@@ -37,18 +37,25 @@
   border: 1px solid var(--ligthBlue);
   padding: 5px;
   margin: 10px;
-  /* background-color:#09ccbf; */
+  /* background-color: var(--ligthBlue); */
 }
 
 .rooms:hover {
   border: 1px solid var(--darkBlue);
 }
 
+.button-sub {
+  border: 1px solid var(--ligthBlue);
+  padding: 12px;
+  background-color: var(--ligthBlue);
 
-@media screen and (min-width: 600px) {
+}
+
+
+/* @media screen and (min-width: 600px) {
   body {
       background-size: cover;
 
   
   }
-}
+} */
