@@ -24,7 +24,7 @@ const Home = () => {
         <div className='rooms-container'>
           <p className='txt-question'>Which room needs work?</p>      
           {homerooms.map((listroom) => <button className='rooms'onClick={selectRoom} >{listroom}</button>)}
-          <Link to='/materials'><button type='submit' className='button-sub' onClick={selectLetsgo}>Let's go !</button></Link>
+          <Link to='/materials'><button type='submit' className='button-sub' onClick={selectLetsgo}>Let's DIY !</button></Link>
         </div>
 
       </div>

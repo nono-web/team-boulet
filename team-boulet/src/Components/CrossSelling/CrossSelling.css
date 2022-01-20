@@ -1,6 +1,6 @@
 .main-container1 {
-    background-color: #FFFFFF;
-    color: black;
+    background-color: #ffffff;
+    color: var(--darkBlue);
     height: 100%;
     width: 90vw;
     margin: 5vh 5vw;
@@ -8,7 +8,8 @@
 }
  
  .option-container1 {
-     color: black;
+     color: white;
+     background-color: var(--ligthBlue);
      width: 90%;
      height: auto;
      margin: 2rem auto;
@@ -26,18 +27,12 @@
     align-items: center;
 }
 
- .products-container1 {
-    display: flex;
-    font-size: 0.75rem;
-    margin-bottom: 1rem;
-    flex-direction: column;
- }
 
- .product-container2 img{
+ .product-container1 img{
     width: 4rem;
 }
 
-.product-container2 {
+.product-container1 {
     display: flex;
     justify-content: space-between;
     align-items: center;

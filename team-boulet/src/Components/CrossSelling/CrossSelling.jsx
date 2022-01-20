@@ -38,29 +38,25 @@ const CrossSelling = () => {
       <CheckoutSteps step1 step2 step3 step4></CheckoutSteps>
 
       <div className="main-container1">
-        <h1>Need a some basic tools?</h1>
+        <h1>Need some basic tools?</h1>
         <div className="option-container1">
           {room[0].materials
             .filter((e) => e.material_name === choice1)
             .map((el) => (
-              <div className="option-container2">
+              <>
                 <h3>Starter Pack {el.material_name}</h3>
-                <div className="option-container3">
                   <label for="name">I want it all</label>
                   <input
                     type="checkbox"
                     checked={input}
                     onChange={() => setInput(!input)}
-                  />
-                </div>
-              </div>
+                  /></>
             ))}
           {room[0].materials
             .filter((e) => e.material_name === choice1)
             .map((el) => (
               <div>
                 <div className="products-container1">
-                    <div className="product-container2">
                       <a
                         target="_blank"
                         href={el.starter_pack_url1}
@@ -76,7 +72,7 @@ const CrossSelling = () => {
                         onChange={() => setInput18(!input18)}
                       />
                     </div>
-                    <div className="product-container2">
+                    <div className="product-container1">
                       <a
                         target="_blank"
                         href={el.starter_pack_url2}
@@ -92,7 +88,7 @@ const CrossSelling = () => {
                         onChange={() => setInput1(!input1)}
                       />
                     </div>
-                    <div className="product-container2">
+                    <div className="product-container1">
                       <a
                         target="_blank"
                         href={el.starter_pack_url3}
@@ -108,7 +104,7 @@ const CrossSelling = () => {
                         onChange={() => setInput2(!input2)}
                       />
                     </div>
-                    <div className="product-container2">
+                    <div className="product-container1">
                       <a
                         target="_blank"
                         href={el.starter_pack_url4}
@@ -124,7 +120,6 @@ const CrossSelling = () => {
                         onChange={() => setInput3(!input3)}
                       />
                     </div>
-                </div>
                 <button onClick={()=>setPackage1(el.starter_pack_total)}>Add to Cart</button>
               </div>
             ))}

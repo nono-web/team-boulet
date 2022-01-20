@@ -1,19 +1,19 @@
 .main-container-home2 {
   background-color: #ffffff;
 
-  color: black;
+  color: var(--darkBlue);
   height: 100vh;
   width: 90vw;
   margin: 5vh 5vw;
 }
 
 .option-container {
-  background-color: #e5e5e5;
-  color: black;
+  background-color: var(--ligthBlue);
+  color: white;
   width: 100%;
-  height: 11rem;
-  margin: 2rem auto;
-  padding:0.5rem;
+  height: 16rem;
+  margin: 0.75rem auto;
+  padding: 0.5rem;
 }
 
 .products-container {
@@ -25,9 +25,31 @@
 
 .product-container img {
   width: 4rem;
+  border: var(--darkBlue) solid 0.1rem;
 }
 
 .conseil,
 a {
   font-size: 0.8rem;
+}
+
+.product-category {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.filter-calculate {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+select{
+  background-color: white;
+  color: var(--darkBlue);
+}
+
+input{
+  text-align: center;
 }

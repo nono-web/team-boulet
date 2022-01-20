@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useApp } from '../../Contexts/AppProvider';
 import { useNavigate } from 'react-router-dom';
@@ -93,7 +94,7 @@ const Materials = () => {
           {showButton5 ? (
            <div className='m-2'>
               <button className={isSelected9 ? "button-selected" : "button"} onClick={() => setIsSelected9(!isSelected9)}>Bed</button>
-              <button className={isSelected10 ? "button-selected" : "button"} onClick={() => setIsSelected10(!isSelected10)}>Matelat</button>
+              <button className={isSelected10 ? "button-selected" : "button"} onClick={() => setIsSelected10(!isSelected10)}>Mattress</button>
             </div>
           ) : null}
         </div>
@@ -103,12 +104,12 @@ const Materials = () => {
           </button>
           {showButton6 ? (
             <div className='m-2'>
-              <button className={isSelected11 ? "button-selected" : "button"} onClick={() => setIsSelected11(!isSelected11)}>storage box</button>
+              <button className={isSelected11 ? "button-selected" : "button"} onClick={() => setIsSelected11(!isSelected11)}>Storage box</button>
             </div>
           ) : null}
           <div className="Letsgo">
 
-            <button className="button-sub1" onClick={handleSubmitMaterials}>Let's Go</button>
+            <button className="button-sub1" onClick={handleSubmitMaterials}>Let's DIY</button>
           </div>
         </div>
       </div></div>
