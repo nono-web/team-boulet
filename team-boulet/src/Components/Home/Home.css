@@ -12,20 +12,36 @@
   background-color: #FFFFFF;
   color: black;
   height: 90vh;
-  width: 90vw;
+  width: 80vw;
   margin: 5vh 5vw;
+  padding: 20px;
 }
 
 .titre-home {
+  font-size: 40px;
+}
+
+.txt-intro{
+  font-size: 20px;
 
 }
 
-.txt-introtxt-txt {
-
+.txt-txt {
+  font-size: 18px;
 }
 
 .txt-question {
+}
 
+.rooms {
+  border: 1px solid var(--ligthBlue);
+  padding: 5px;
+  margin: 10px;
+  /* background-color:#09ccbf; */
+}
+
+.rooms:hover {
+  border: 1px solid var(--darkBlue);
 }
 
 
