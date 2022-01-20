@@ -15,8 +15,8 @@ const Home = () => {
   return (
     <div>
       <CheckoutSteps step1></CheckoutSteps>
-      <div className='main-container'> 
-
+      <div className='main-container-home'>
+  
         <h1 className='titre-home'>What is my next DIY project?</h1>
         <p className='txt-intro'>Get all the materials you need for your next project and tips on how to do it like a pro!</p>
         <p className='txt-txt'>Also take advantage of our remote coaching programme so that you are never alone during your project.</p>
