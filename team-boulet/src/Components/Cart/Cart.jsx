@@ -30,7 +30,7 @@ const Cart = () => {
 
   return (
     <div>
-      <CheckoutSteps step1 step2 step3 step4 step5></CheckoutSteps>
+      <CheckoutSteps step1 step2 step3 step4 step5 step6></CheckoutSteps>
       <div className="main-container1">
         <h2>My  Cart</h2>
         <h3>My materials</h3>
