@@ -9,7 +9,7 @@ const Options = () => {
   const [valueFloor, setValueFloor] = useState(1);
   const [valueWall, setValueWall] = useState(1);
 
-  const navigate = useNavigate();
+
 
   const { choice1, choice2, choice3, setProduct1, setProduct2, setProduct3 } =
     useApp();
