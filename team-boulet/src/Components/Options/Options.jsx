@@ -26,11 +26,6 @@ const Options = () => {
     setProduct3(e.target.value);
   };
 
-  const navigator = useNavigate();
-
-  const handlechange = () => {
-    navigator("/cross-selling");
-  };
   return (
     <div>
       <CheckoutSteps step1 step2 step3></CheckoutSteps>
@@ -41,8 +36,9 @@ const Options = () => {
           {room[0].materials
             .filter((e) => e.material_name === choice1)
             .map((el) => (
-              <h3>{el.material_name}</h3>
+              <h3 className="product-category">{el.material_name}</h3>
             ))}
+            <div className="filter-calculate">
           <label for="floor">Filter:</label>
           <select name="floor" id="floor">
             <option value="all">All</option>
@@ -67,6 +63,7 @@ const Options = () => {
               ></input>
             </label>
           </form>
+          </div>
 
           {room[0].materials
             .filter((e) => e.material_name === choice1)
@@ -136,8 +133,9 @@ const Options = () => {
           {room[1].materials
             .filter((e) => e.material_name === choice2)
             .map((el) => (
-              <h3>{el.material_name}</h3>
+              <h3 className="product-category">{el.material_name}</h3>
             ))}
+         <div className="filter-calculate">
           <label for="floor">Filter:</label>
           <select name="floor" id="floor">
             <option value="all">All</option>
@@ -162,6 +160,7 @@ const Options = () => {
               ></input>
             </label>
           </form>
+          </div>
           {room[1].materials
             .filter((e) => e.material_name === choice2)
             .map((el) => (
@@ -230,7 +229,7 @@ const Options = () => {
           {room[2].materials
             .filter((e) => e.material_name === choice3)
             .map((el) => (
-              <h3>{el.material_name}</h3>
+              <h3 className="product-category">{el.material_name}</h3>
             ))}
           {room[2].materials
             .filter((e) => e.material_name === choice3)
@@ -297,8 +296,8 @@ const Options = () => {
             ))}
         </div>
         <div className="Letsgo">
-          <button className="button-sub1" onClick={handlechange}>
-            Let's Go
+          <button className="button-sub1" onClick={() => navigate("/cross-selling")}>
+            Let's DIY
           </button>
         </div>
       </div>
