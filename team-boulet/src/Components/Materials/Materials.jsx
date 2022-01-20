@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useApp } from '../../Contexts/AppProvider';
 import './Materials.css';
 
 const Materials = () => {
@@ -21,7 +22,13 @@ const Materials = () => {
   const [showButton5, setShowButton5] = useState(false);
   const [showButton6, setShowButton6] = useState(false);
 
+  const { setChoice1, setChoice2, setChoice3} = useApp();
 
+  const handleSubmitMaterials = () => {
+    isSelected1 ? setChoice1("Wooden Floor") : isSelected2 ? setChoice1("Carpet") : setChoice1("Floor tile"); 
+    isSelected4 ? setChoice2("Wallpaper") : setChoice2("Paint");
+    isSelected7 ? setChoice3("Inertia Radiator") : setChoice3("Fan Heater");
+  }
 
   return (
     <div className="m">
@@ -33,7 +40,7 @@ const Materials = () => {
           </button>
           {showButton ? (
             <div className='m-2'>
-              <button className={isSelected1 ? "button-selected" : "button"} onClick={() => setIsSelected1(!isSelected1)} >Parquet</button>
+              <button className={isSelected1 ? "button-selected" : "button"} onClick={() => setIsSelected1(!isSelected1)}>Parquet</button>
               <button className={isSelected2 ? "button-selected" : "button"} onClick={() => setIsSelected2(!isSelected2)}>Moquette</button>
               <button className={isSelected3 ? "button-selected" : "button"} onClick={() => setIsSelected3(!isSelected3)}>Carrelage</button>
             </div>
@@ -92,7 +99,7 @@ const Materials = () => {
             </div>
           ) : null}
           <div className="Letsgo">
-            <button className="button1">Let's Go</button>
+            <button className="button1" onClick={handleSubmitMaterials}>Let's Go</button>
           </div>
         </div>
       </div>
