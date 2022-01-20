@@ -4,7 +4,6 @@ import { useApp } from "../../Contexts/AppProvider";
 import { useNavigate } from "react-router";
 import "./Options.css";
 import CheckoutSteps from "../CheckoutSteps/CheckoutSteps";
-import { useNavigate } from 'react-router-dom';
 
 const Options = () => {
   const [valueFloor, setValueFloor] = useState(1);
@@ -12,34 +11,31 @@ const Options = () => {
 
   const navigate = useNavigate();
 
-  const { choice1, choice2, choice3, setProduct1, setProduct2, setProduct3} = useApp();
+  const { choice1, choice2, choice3, setProduct1, setProduct2, setProduct3 } =
+    useApp();
 
   const handleProduct1 = (e) => {
     setProduct1(e.target.value);
-  }
+  };
 
   const handleProduct2 = (e) => {
     setProduct2(e.target.value);
-  }
+  };
 
   const handleProduct3 = (e) => {
     setProduct3(e.target.value);
-  }
+  };
 
   const navigator = useNavigate();
 
-const handlechange = () => {
-  navigator('/cross-selling');
-
-}
+  const handlechange = () => {
+    navigator("/cross-selling");
+  };
   return (
     <div>
-
-    <CheckoutSteps step1 step2 step3></CheckoutSteps>
-    <div className="main-container-home2">
-      
-      <h1 className="titre-home">My Options</h1>
-
+      <CheckoutSteps step1 step2 step3></CheckoutSteps>
+      <div className="main-container-home2">
+        <h1 className="titre-home">My Options</h1>
 
         <div className="option-container">
           {room[0].materials
@@ -82,28 +78,52 @@ const handlechange = () => {
                       <img src={el.image1} alt=""></img>
                     </a>
                     <p>Price: {el.price1 * valueFloor}€</p>
-                    <input type="checkbox" id={el.url1} value={el.price1 * valueFloor} name="select" onClick={(e)=>handleProduct1(e)}></input>
+                    <input
+                      type="checkbox"
+                      id={el.url1}
+                      value={el.price1 * valueFloor}
+                      name="select"
+                      onClick={(e) => handleProduct1(e)}
+                    ></input>
                   </div>
                   <div className="product-container">
                     <a target="_blank" href={el.url2} rel="noreferrer">
                       <img src={el.image2} alt=""></img>
                     </a>
                     <p>Price: {el.price2 * valueFloor}€</p>
-                    <input type="checkbox" id={el.url2} value={el.price2 * valueFloor} name="select" onClick={(e)=>handleProduct1(e)} ></input>
+                    <input
+                      type="checkbox"
+                      id={el.url2}
+                      value={el.price2 * valueFloor}
+                      name="select"
+                      onClick={(e) => handleProduct1(e)}
+                    ></input>
                   </div>
                   <div className="product-container">
                     <a target="_blank" href={el.url3} rel="noreferrer">
                       <img src={el.image3} alt=""></img>
                     </a>
                     <p>Price: {el.price3 * valueFloor}€</p>
-                    <input type="checkbox" id={el.url3} value={el.price3 * valueFloor} name="select" onClick={(e)=>handleProduct1(e)} ></input>
+                    <input
+                      type="checkbox"
+                      id={el.url3}
+                      value={el.price3 * valueFloor}
+                      name="select"
+                      onClick={(e) => handleProduct1(e)}
+                    ></input>
                   </div>
                   <div className="product-container">
                     <a target="_blank" href={el.url4} rel="noreferrer">
                       <img src={el.image4} alt=""></img>
                     </a>
                     <p>Price: {el.price4 * valueFloor}€</p>
-                    <input type="checkbox" id={el.url4} value={el.price4 * valueFloor} name="select" onClick={(e)=>handleProduct1(e)} ></input>
+                    <input
+                      type="checkbox"
+                      id={el.url4}
+                      value={el.price4 * valueFloor}
+                      name="select"
+                      onClick={(e) => handleProduct1(e)}
+                    ></input>
                   </div>
                 </div>
                 <a target="_blank" href={el.conseil} rel="noreferrer">
@@ -152,28 +172,52 @@ const handlechange = () => {
                       <img src={el.image1} alt=""></img>
                     </a>
                     <p>Price: {el.price1 * valueWall}€</p>
-                    <input type="checkbox" id={el.url1} value={el.price1 * valueWall} name="select" onClick={(e)=>handleProduct2(e)}></input>
+                    <input
+                      type="checkbox"
+                      id={el.url1}
+                      value={el.price1 * valueWall}
+                      name="select"
+                      onClick={(e) => handleProduct2(e)}
+                    ></input>
                   </div>
                   <div className="product-container">
                     <a target="_blank" href={el.url2} rel="noreferrer">
                       <img src={el.image2} alt=""></img>
                     </a>
                     <p>Price: {el.price2 * valueWall}€</p>
-                    <input type="checkbox" id={el.url2} value={el.price2 * valueWall} name="select" onClick={(e)=>handleProduct2(e)} ></input>
+                    <input
+                      type="checkbox"
+                      id={el.url2}
+                      value={el.price2 * valueWall}
+                      name="select"
+                      onClick={(e) => handleProduct2(e)}
+                    ></input>
                   </div>
                   <div className="product-container">
                     <a target="_blank" href={el.url3} rel="noreferrer">
                       <img src={el.image3} alt=""></img>
                     </a>
                     <p>Price: {el.price3 * valueWall}€</p>
-                    <input type="checkbox" id={el.url3} value={el.price3 * valueWall} name="select" onClick={(e)=>handleProduct2(e)} ></input>
+                    <input
+                      type="checkbox"
+                      id={el.url3}
+                      value={el.price3 * valueWall}
+                      name="select"
+                      onClick={(e) => handleProduct2(e)}
+                    ></input>
                   </div>
                   <div className="product-container">
                     <a target="_blank" href={el.url4} rel="noreferrer">
                       <img src={el.image4} alt=""></img>
                     </a>
                     <p>Price: {el.price4 * valueWall}€</p>
-                    <input type="checkbox" id={el.url4} value={el.price4 * valueWall} name="select" onClick={(e)=>handleProduct2(e)} ></input>
+                    <input
+                      type="checkbox"
+                      id={el.url4}
+                      value={el.price4 * valueWall}
+                      name="select"
+                      onClick={(e) => handleProduct2(e)}
+                    ></input>
                   </div>
                 </div>
                 <a target="_blank" href={el.conseil} rel="noreferrer">
@@ -198,45 +242,66 @@ const handlechange = () => {
                       <img src={el.image1} alt=""></img>
                     </a>
                     <p>Price: {el.price1}€</p>
-                    <input type="checkbox" id={el.url1} value={el.price1 * valueFloor} name="select" onClick={(e)=>handleProduct3(e)}></input>
+                    <input
+                      type="checkbox"
+                      id={el.url1}
+                      value={el.price1 * valueFloor}
+                      name="select"
+                      onClick={(e) => handleProduct3(e)}
+                    ></input>
                   </div>
                   <div className="product-container">
                     <a target="_blank" href={el.url2} rel="noreferrer">
                       <img src={el.image2} alt=""></img>
                     </a>
                     <p>Price: {el.price2}€</p>
-                    <input type="checkbox" id={el.url2} value={el.price2 * valueFloor} name="select" onClick={(e)=>handleProduct3(e)} ></input>
+                    <input
+                      type="checkbox"
+                      id={el.url2}
+                      value={el.price2 * valueFloor}
+                      name="select"
+                      onClick={(e) => handleProduct3(e)}
+                    ></input>
                   </div>
                   <div className="product-container">
                     <a target="_blank" href={el.url3} rel="noreferrer">
                       <img src={el.image3} alt=""></img>
                     </a>
                     <p>Price: {el.price3}€</p>
-                    <input type="checkbox" id={el.url3} value={el.price3 * valueFloor} name="select" onClick={(e)=>handleProduct3(e)} ></input>
+                    <input
+                      type="checkbox"
+                      id={el.url3}
+                      value={el.price3 * valueFloor}
+                      name="select"
+                      onClick={(e) => handleProduct3(e)}
+                    ></input>
                   </div>
                   <div className="product-container">
                     <a target="_blank" href={el.url4} rel="noreferrer">
                       <img src={el.image4} alt=""></img>
                     </a>
                     <p>Price: {el.price4}€</p>
-                    <input type="checkbox" id={el.url4} value={el.price4 * valueFloor} name="select" onClick={(e)=>handleProduct3(e)} ></input>
+                    <input
+                      type="checkbox"
+                      id={el.url4}
+                      value={el.price4 * valueFloor}
+                      name="select"
+                      onClick={(e) => handleProduct3(e)}
+                    ></input>
                   </div>
                 </div>
                 <a target="_blank" href={el.conseil} rel="noreferrer">
                   <p className="conseil">My ManoMano Advice</p>
                 </a>
               </div>
-
-              <a target="_blank" href={el.conseil} rel="noreferrer">
-                <p className="conseil">My ManoMano Advice</p>
-              </a>
-            </div>
-           
-          ))} 
-      </div><div className="Letsgo">
-
-            <button className="button-sub1" onClick={handlechange} >Let's Go</button>
-          </div>
+            ))}
+        </div>
+        <div className="Letsgo">
+          <button className="button-sub1" onClick={handlechange}>
+            Let's Go
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
