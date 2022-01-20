@@ -1,0 +1,98 @@
+body {
+    background-image: url('../../assets/background.jpg');    
+    background-repeat: no-repeat;
+    background-size: 200%; 
+}
+
+.m-h1 {
+margin-top: 20px;
+}
+
+.button {
+    border: 1px solid var(--ligthBlue);
+    padding: 5px;
+    background-color: white;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.button-selected {
+    background-color: var(--darkBlue);
+    border: 1px solid var(--ligthBlue);
+    padding: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0.5rem;
+}
+
+.button:hover {
+    background-color: var(--ligthBlue);
+}
+
+.m-body {
+    background-color: #FFFFFF;
+    color: black;
+    height: 94vh;
+    width: 90vw;
+    margin: 5vh 5vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-button {
+    border: 1px solid var(--ligthBlue);
+    padding: 5px;
+    background-color: white;
+}
+
+.m-button:focus {
+    background-color: var(--darkBlue);
+}
+
+.m-button:hover {
+    background-color:var(--darkBlue) ;
+}
+
+.m-button-container,
+.m-button-container2,
+.m-button-container3,
+.m-button-container4,
+.m-button-container5,
+.m-button-container6
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.6rem;
+    width: 55%;
+  }
+
+  .m-2 {
+      display: flex;
+  }
+
+.button1 {
+    background-color: var(--ligthBlue);
+    color: white;
+    font-weight: bold;
+    width: 65%;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid var(--ligthBlue);
+}
+
+.button1:hover {
+    background-color: var(--darkBlue);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+      background-size: cover;
+  }
+}
