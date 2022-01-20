@@ -1,6 +1,6 @@
 .main-container1 {
   background-color: #ffffff;
-  color: black;
+  color: #0c193a;
   height: 100%;
   width: 90vw;
   margin: 5vh 5vw;
@@ -9,9 +9,54 @@
   padding-left: 1rem;
 }
 
+.container2{
+  background-color: #EEFBFA;
+  margin: 5vh 5vw;
+  padding-bottom: 5px;
+  padding-left: 1rem;
+  border-radius: 1%;
+}
+
 button {
   cursor: pointer;
   margin-top: 1rem;
+  color:#0c193a;
+  background-color: #EEEEEE;
+  border: 0;
+  padding: 2px 10px;
+}
+
+.rooms-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-sub {
+  width: 300px;
+  padding: 15px;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--ligthBlue);
+  border: 1px solid var(--ligthBlue);
+  cursor: pointer;
+}
+
+.button-sub:hover {
+  color: #fff;
+  background-color: var(--darkBlue);
+  border: 1px solid var(--darkBlue);
+  cursor: pointer;
+}
+
+.button-sub:focus {
+  font-weight: bold;
+  background-color: var(--ligthBlue);
 }
 
 .product-line, .total {
@@ -23,4 +68,13 @@ h2 {
 }
 h3 {
   margin-top: 2rem;
+  padding: 2px 10px;
+  background-color: #0c193a;
+  color: #fff;
+}
+
+.total{
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
 }

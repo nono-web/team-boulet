@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CheckoutSteps from "../CheckoutSteps/CheckoutSteps";
 import { useNavigate } from "react-router";
+import { useApp } from "../../Contexts/AppProvider";
 import "./Coaching.css";
 
 
@@ -15,7 +16,15 @@ const Coaching = () => {
   const selectPack2 = () => setIsClick2(!isClick2);
   const selectPack3 = () => setIsClick3(!isClick3);
 
+  const {setCoaching} = useApp();
+
   const navigate = useNavigate();
+
+  const handleSubmitCoaching = () => {
+    console.log('coucou');
+    isClick1 ? setCoaching("Mano Pack: 5 €") : isClick2 ? setCoaching("Mano Mano Pack: 50 €") : setCoaching("Mano Mano Mano Pack: 150 €"); 
+    navigate('/cart');
+  }
 
   return (
     <>
@@ -37,19 +46,19 @@ const Coaching = () => {
       
           <div onClick={selectPack2} className={isClick2 ? "card-selected" : "card"}>
             <div className="title">Mano Mano Pack</div>
-            <div className="price">€ 100</div>
-            <p className="p">Use our hot line on saturday and sunday if you have an issue in your project !</p> 
+            <div className="price">€ 50</div>
+            <p className="p">Use our hot line on Saturdays and Sundays if you have an issue in your project !</p> 
           </div>
   
           <div onClick={selectPack3} className={isClick3 ? "card-selected" : "card"}>
-            <div className="title">Third Mano Pack</div>
-            <div className="price">€ 400</div>
+            <div className="title">Mano Mano Mano Pack</div>
+            <div className="price">€ 150</div>
             <p className="p">Be assisted by an expert at every step of the way on a 4h video call ! </p>
           </div>
   
         </div>
       </div>
-      <button className="button1" onClick={()=>{navigate('/cart')}}>Let's DIY</button>
+      <button className="button1" onClick={()=>handleSubmitCoaching()} className='rooms-container' className='button-sub' >Let's DIY</button>
     </div>
   </div>
   </>

@@ -293,8 +293,8 @@ const CrossSelling = () => {
               </div>
             ))}
         </div>{" "}
-        <div className="rooms-container">
-          <button className="button-sub" onClick={() => navigate("/cart")}>
+        <div className="rooms-container">         
+        <button className="button1" onClick={() => navigate('/coaching')}>
             Let's DIY
           </button>
         </div>
