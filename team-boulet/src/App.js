@@ -7,6 +7,7 @@ import Cart from './Components/Cart/Cart';
 import Header from './Components/Header/Header';
 import './App.css';
 import AppProvider from './Contexts/AppProvider';
+import Coaching from './Components/Coaching/Coaching';
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
           <Route path='/options' element={<Options />} />
           <Route path='/cross-selling' element={<CrossSelling />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/coaching' element={<Coaching />} />
         </Routes>
       </Router>
       </AppProvider>
