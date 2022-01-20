@@ -1,0 +1,40 @@
+body {
+    background-image: url('../../Assets/background.jpg');    
+    position:fixed;
+    background-repeat: no-repeat;
+    background-size: 200%; 
+ }
+
+.main-container {
+    background-color: #FFFFFF;
+    color: black;
+    height: 90vh;
+    width: 90vw;
+    margin: 5vh 5vw;
+}
+ 
+ .option-container {
+     background-color: #E5E5E5;
+     color: black;
+     width: 90%;
+     height: 11rem;
+     margin: 2rem auto;
+
+ }
+
+ .products-container{
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+ }
+
+ .product-container img{
+    width: 4rem;
+}
+
+.conseil, a {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 0.8rem;
+}

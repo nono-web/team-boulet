@@ -1,15 +1,92 @@
 body {
-  background-image: url('../../Assets/imageonline-co-resizedimage.png');    
-  position:fixed;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+    background-image: url('../../Assets/background.jpg');    
+    background-repeat: no-repeat;
+    background-size: 200%; 
+}
+
+.button {
+    border: 1px solid var(--ligthBlue);
+    padding: 5px;
+    background-color: white;  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button-selected {
+    background-color: var(--darkBlue);
+    border: 1px solid var(--ligthBlue);
+    padding: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button:hover {
+    background-color: var(--ligthBlue);
+}
+
+.m-body {
+    background-color: #FFFFFF;
+    color: black;
+    height: 94vh;
+    width: 90vw;
+    margin: 5vh 5vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-button {
+    border: 1px solid var(--ligthBlue);
+    padding: 5px;
+    background-color: white;
+}
+
+.m-button:focus {
+    background-color: var(--darkBlue);
+}
+
+.m-button:hover {
+    background-color:var(--darkBlue) ;
+}
+
+.m-button-container,
+.m-button-container2,
+.m-button-container3,
+.m-button-container4,
+.m-button-container5,
+.m-button-container6
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.6rem;
+    width: 55%;
+  }
+
+  .m-2 {
+      display: flex;
+  }
+
+.button1 {
+    background-color: var(--ligthBlue);
+    color: white;
+    font-weight: bold;
+    border-radius: 2rem;
+    width: 65%;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.button1:hover {
+    background-color: var(--darkBlue);
 }
 
 @media screen and (min-width: 600px) {
   body {
       background-size: cover;
-
-  
   }
 }
