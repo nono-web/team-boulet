@@ -21,7 +21,12 @@ code {
 }
 
 :root {
-  --darkBlue: #00388f;
-  --ligthBlue: #09ccbf;
+  --dark: #0c193a;
+  --grey: #505971;
+  --darkBlue: #1e3c87;
+  --ligthBlue: #29b9ad;
+  --light-blue: #00eccd;
+  --red: #FE6365;
+  --yellow: #FFB900;
   font-size: 16px;
 }
