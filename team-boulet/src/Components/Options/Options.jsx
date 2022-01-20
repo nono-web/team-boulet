@@ -244,7 +244,7 @@ const Options = () => {
                     <input
                       type="checkbox"
                       id={el.url1}
-                      value={el.price1 * valueFloor}
+                      value={el.price1}
                       name="select"
                       onClick={(e) => handleProduct3(e)}
                     ></input>
@@ -257,7 +257,7 @@ const Options = () => {
                     <input
                       type="checkbox"
                       id={el.url2}
-                      value={el.price2 * valueFloor}
+                      value={el.price2}
                       name="select"
                       onClick={(e) => handleProduct3(e)}
                     ></input>
@@ -270,7 +270,7 @@ const Options = () => {
                     <input
                       type="checkbox"
                       id={el.url3}
-                      value={el.price3 * valueFloor}
+                      value={el.price3}
                       name="select"
                       onClick={(e) => handleProduct3(e)}
                     ></input>
@@ -283,7 +283,7 @@ const Options = () => {
                     <input
                       type="checkbox"
                       id={el.url4}
-                      value={el.price4 * valueFloor}
+                      value={el.price4}
                       name="select"
                       onClick={(e) => handleProduct3(e)}
                     ></input>
