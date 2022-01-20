@@ -6,6 +6,7 @@ import CrossSelling from './Components/CrossSelling/CrossSelling';
 import Cart from './Components/Cart/Cart';
 import Header from './Components/Header/Header';
 import './App.css';
+import AppProvider from './Contexts/AppProvider';
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
   return (
     
     <div className='App'>
+      <AppProvider>
       <Header />
       <Router>
         <Routes>
@@ -23,6 +25,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
         </Routes>
       </Router>
+      </AppProvider>
     </div>
   );
 }
