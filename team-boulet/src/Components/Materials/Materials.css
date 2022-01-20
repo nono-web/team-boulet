@@ -10,7 +10,8 @@ body {
     background-color: white;  
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 0.5rem;
 }
 
 .button-selected {
@@ -20,6 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0.5rem;
 }
 
 .button:hover {
