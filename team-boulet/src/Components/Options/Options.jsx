@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 import room from "../../data";
+import { useApp } from '../../Contexts/AppProvider';
 import "./Options.css";
+import CheckoutSteps from "../CheckoutSteps/CheckoutSteps";
 
 const Options = () => {
   const [valueFloor, setValueFloor] = useState(1);
   const [valueWall, setValueWall] = useState(1);
 
+  const { choice1, choice2, choice3} = useApp();
+
   return (
+    <div>
+    <CheckoutSteps step1 step2 step3></CheckoutSteps>
     <div className="main-container">
+      
       <h1>My Options</h1>
 
       <div className="option-container">
         {room[0].materials
-          .filter((e) => e.material_name === "Carpet")
+          .filter((e) => e.material_name === choice1)
           .map((el) => (
             <h3>{el.material_name}</h3>
           ))}
@@ -42,7 +49,7 @@ const Options = () => {
         </form>
 
         {room[0].materials
-          .filter((e) => e.material_name === "Carpet")
+          .filter((e) => e.material_name === choice1)
           .map((el) => (
             <div>
               <div className="products-container">
@@ -83,7 +90,7 @@ const Options = () => {
       </div>
       <div className="option-container">
         {room[1].materials
-          .filter((e) => e.material_name === "Paint")
+          .filter((e) => e.material_name === choice2)
           .map((el) => (
             <h3>{el.material_name}</h3>
           ))}
@@ -112,7 +119,7 @@ const Options = () => {
           </label>
         </form>
         {room[1].materials
-          .filter((e) => e.material_name === "Paint")
+          .filter((e) => e.material_name === choice2)
           .map((el) => (
             <div>
               <div className="products-container">
@@ -153,12 +160,12 @@ const Options = () => {
       </div>
       <div className="option-container">
         {room[2].materials
-          .filter((e) => e.material_name === "Inertia Radiator")
+          .filter((e) => e.material_name === choice3)
           .map((el) => (
             <h3>{el.material_name}</h3>
           ))}
         {room[2].materials
-          .filter((e) => e.material_name === "Inertia Radiator")
+          .filter((e) => e.material_name === choice3)
           .map((el) => (
             <div>
               <div className="products-container">
@@ -197,6 +204,7 @@ const Options = () => {
             </div>
           ))}
       </div>
+    </div>
     </div>
   );
 };

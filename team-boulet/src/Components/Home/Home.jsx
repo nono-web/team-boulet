@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import room from '../../data';
+import CheckoutSteps from '../CheckoutSteps/CheckoutSteps';
 
 import './Home.css';
 
@@ -13,7 +14,10 @@ const Home = () => {
   const selectLetsgo = () => setButtonLetsgo(true);
 
   return (
+    <div>
+    <CheckoutSteps step1></CheckoutSteps>
     <div className='main-container'>
+ 
 
       <h1 className='titre-home'>What is my next DIY project?</h1>
       <p className='txt-intro'>Get all the materials you need for your next project and tips on how to do it like a pro!</p>
@@ -26,6 +30,8 @@ const Home = () => {
       </div>
 
     </div>
-  )};    
+    </div>
+  )};
+
 
 export default Home;

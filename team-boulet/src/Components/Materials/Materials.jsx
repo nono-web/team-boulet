@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useApp } from '../../Contexts/AppProvider';
 import { useNavigate } from 'react-router-dom';
 import './Materials.css';
+import CheckoutSteps from '../CheckoutSteps/CheckoutSteps';
 
 const Materials = () => {
   const [isSelected1, setIsSelected1] = useState(false);
@@ -36,6 +37,7 @@ const Materials = () => {
 
   return (
     <div className="m">
+      <CheckoutSteps step1 step2></CheckoutSteps>
       <div className="m-body">
         <h1 className='m-h1'> What will I do in this room ? </h1>
         <div className="m-button-container">
