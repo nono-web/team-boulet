@@ -1,13 +1,4 @@
-
-body {
-
-  background-image: url("../../assets/background.jpg");
-  background-repeat: no-repeat;
-  background-size: 200%;
-  background-attachment: fixed;
-}
-
-.main-container {
+.main-container-home2 {
   background-color: #ffffff;
 
   color: black;
@@ -19,17 +10,18 @@ body {
 .option-container {
   background-color: #e5e5e5;
   color: black;
-  width: 90%;
+  width: 100%;
   height: 11rem;
   margin: 2rem auto;
+  padding:0.5rem;
 }
 
 .products-container {
   display: flex;
   justify-content: space-around;
   font-size: 0.75rem;
+  margin-bottom: 1rem;
 }
-
 
 .product-container img {
   width: 4rem;
@@ -39,4 +31,3 @@ body {
 a {
   font-size: 0.8rem;
 }
-

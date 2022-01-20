@@ -17,7 +17,6 @@
 
 .txt-intro{
   font-size: 20px;
-
 }
 
 .txt-txt {
@@ -74,5 +73,6 @@
 }
 
 .button-sub:focus {
+  font-weight: bold;
   background-color: var(--ligthBlue);
 }
