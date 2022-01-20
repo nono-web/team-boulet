@@ -1,15 +1,14 @@
 .main-container {
-  font-family: 'Roboto', sans-serif;
-  background-color: #FFFFFF;
-  color: black;
-  height: 90vh;
-  width: 70vw;
-  margin: 5vh 5vw;
-  padding: 20px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 70vw;
+  height: 90vh;
+  margin: 5vh 5vw;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background-color: #FFFFFF;
 }
 
 .titre-home {
@@ -37,10 +36,10 @@
 }
 
 .rooms {
-  border: 1px solid var(--ligthBlue);
-  background-color: #fff;
   padding: 5px;
   margin: 10px 0;
+  border: 1px solid var(--ligthBlue);
+  background-color: #fff;
 }
 
 .rooms:hover {
@@ -49,27 +48,27 @@
 }
 
 .rooms:focus {
-  background-color: var(--ligthBlue);
   color: #fff;
+  background-color: var(--ligthBlue);
 }
 
 .button-sub {
-  border: 1px solid var(--ligthBlue);
-  background-color: var(--ligthBlue);
-  color: #fff;
+  width: 300px;
   padding: 15px;
-  cursor: pointer;
-  text-transform: uppercase;
+  margin-top: 15px;
+  color: #fff;
   font-size: 18px;
   font-weight: bold;
-  width: 300px;
-  margin-top: 15px;
+  text-transform: uppercase;
+  background-color: var(--ligthBlue);
+  border: 1px solid var(--ligthBlue);
+  cursor: pointer;
 }
 
 .button-sub:hover {
-  border: 1px solid var(--darkBlue);
-  background-color: var(--darkBlue);
   color: #fff;
+  background-color: var(--darkBlue);
+  border: 1px solid var(--darkBlue);
   cursor: pointer;
 }
 
