@@ -24,21 +24,31 @@ const room = [
         conseil:
           "https://www.manomano.fr/conseil/comment-choisir-son-parquet-2869",
         starter_pack_name1: "Cutting press",
-        starter_pack_url1: "https://www.manomano.fr/p/wolfcraft-presse-coupante-pour-sols-stratifies-et-vinyle-vlc-800-38807416",
-        starter_pack_image1: "https://cdn.manomano.com/images/images_products/8942628/T/16634285_1.jpg",
+        starter_pack_url1:
+          "https://www.manomano.fr/p/wolfcraft-presse-coupante-pour-sols-stratifies-et-vinyle-vlc-800-38807416",
+        starter_pack_image1:
+          "https://cdn.manomano.com/images/images_products/8942628/T/16634285_1.jpg",
         starter_pack_price1: "79",
         starter_pack_name2: "Installation set",
-        starter_pack_url2: "https://www.manomano.fr/p/1-kit-de-pose-de-parquet-6931000-6428166",
-        starter_pack_image2: "https://cdn.manomano.com/images/images_products/2009294/T/14479813_1.jpg",
+        starter_pack_url2:
+          "https://www.manomano.fr/p/1-kit-de-pose-de-parquet-6931000-6428166",
+        starter_pack_image2:
+          "https://cdn.manomano.com/images/images_products/2009294/T/14479813_1.jpg",
         starter_pack_price2: "12",
         starter_pack_name3: "Profile gauge",
-        starter_pack_url3: "https://www.manomano.fr/catalogue/p/outil-de-jauge-de-profil-de-duplicateur-de-contour-de-forme-universelle-vert-38701951?model_id=38682736",
-        starter_pack_image3: "https://cdn.manomano.com/images/images_products/6333895/T/37246680_1.jpg",
+        starter_pack_url3:
+          "https://www.manomano.fr/catalogue/p/outil-de-jauge-de-profil-de-duplicateur-de-contour-de-forme-universelle-vert-38701951?model_id=38682736",
+        starter_pack_image3:
+          "https://cdn.manomano.com/images/images_products/6333895/T/37246680_1.jpg",
         starter_pack_price3: "14",
         starter_pack_name4: "Parquet glue",
-        starter_pack_url4: "https://www.manomano.fr/catalogue/p/colle-rl-0500l-19108482",
-        starter_pack_image4: "https://cdn.manomano.com/images/images_products/11350358/T/19425102_1.jpg",
+        starter_pack_url4:
+          "https://www.manomano.fr/catalogue/p/colle-rl-0500l-19108482",
+        starter_pack_image4:
+          "https://cdn.manomano.com/images/images_products/11350358/T/19425102_1.jpg",
         starter_pack_price4: "23",
+        starter_pack_total: "128",
+
       },
       {
         material_name: "Carpet",
@@ -61,21 +71,31 @@ const room = [
         conseil:
           "https://www.manomano.fr/conseil/comment-choisir-un-revetement-de-sol-2507",
         starter_pack_name1: "Profile gauge",
-        starter_pack_url1: "https://www.manomano.fr/catalogue/p/outil-de-jauge-de-profil-de-duplicateur-de-contour-de-forme-universelle-vert-38701951?model_id=38682736",
-        starter_pack_image1: "https://cdn.manomano.com/images/images_products/6333895/T/37246680_1.jpg",
+        starter_pack_url1:
+          "https://www.manomano.fr/catalogue/p/outil-de-jauge-de-profil-de-duplicateur-de-contour-de-forme-universelle-vert-38701951?model_id=38682736",
+        starter_pack_image1:
+          "https://cdn.manomano.com/images/images_products/6333895/T/37246680_1.jpg",
         starter_pack_price1: "14",
         starter_pack_name2: "Cutting rule",
-        starter_pack_url2: "https://www.manomano.fr/p/regle-de-coupe-parfecoup-22483316?model_id=22473569",
-        starter_pack_image2: "https://cdn.manomano.com/images/images_products/33733/T/22789695_1.jpg",
+        starter_pack_url2:
+          "https://www.manomano.fr/p/regle-de-coupe-parfecoup-22483316?model_id=22473569",
+        starter_pack_image2:
+          "https://cdn.manomano.com/images/images_products/33733/T/22789695_1.jpg",
         starter_pack_price2: "35",
         starter_pack_name3: "Flusher",
-        starter_pack_url3: "https://www.manomano.fr/p/araseur-plastifeutre-671356",
-        starter_pack_image3: "https://cdn.manomano.com/images/images_products/3421320/T/11766274_1.jpg",
+        starter_pack_url3:
+          "https://www.manomano.fr/p/araseur-plastifeutre-671356",
+        starter_pack_image3:
+          "https://cdn.manomano.com/images/images_products/3421320/T/11766274_1.jpg",
         starter_pack_price3: "27",
         starter_pack_name4: "Cutter",
-        starter_pack_url4: "https://www.manomano.fr/p/cutter-bi-matiere-largeur-lame-25mm-427296",
-        starter_pack_image4: "https://cdn.manomano.com/images/images_products/6145579/T/24134530_1.jpg",
+        starter_pack_url4:
+          "https://www.manomano.fr/p/cutter-bi-matiere-largeur-lame-25mm-427296",
+        starter_pack_image4:
+          "https://cdn.manomano.com/images/images_products/6145579/T/24134530_1.jpg",
         starter_pack_price4: "11",
+        starter_pack_total: "87",
+
       },
       {
         material_name: "Floor tile",
@@ -98,21 +118,30 @@ const room = [
         conseil:
           "https://www.manomano.fr/conseil/comment-choisir-son-carrelage-de-sol-interieur-8598",
         starter_pack_name1: "Self-leveling kit",
-        starter_pack_url1: "https://www.manomano.fr/catalogue/p/sidamo---kit-en-seau-pince--100-cales--100-croisillons-3-mm-auto-nivelants-en-seau---11200038-39405767",
-        starter_pack_image1: "https://cdn.manomano.com/images/images_products/4836393/T/9068324_1.jpg",
+        starter_pack_url1:
+          "https://www.manomano.fr/catalogue/p/sidamo---kit-en-seau-pince--100-cales--100-croisillons-3-mm-auto-nivelants-en-seau---11200038-39405767",
+        starter_pack_image1:
+          "https://cdn.manomano.com/images/images_products/4836393/T/9068324_1.jpg",
         starter_pack_price1: "51",
         starter_pack_name2: "Tiling kit",
-        starter_pack_url2: "https://www.manomano.fr/catalogue/p/kit-pro-special-carreleur-avec-bac-24-litres-4-accessoires-diamwood-14792895",
-        starter_pack_image2: "https://cdn.manomano.com/images/images_products/4836393/T/15112730_1.jpg",
+        starter_pack_url2:
+          "https://www.manomano.fr/catalogue/p/kit-pro-special-carreleur-avec-bac-24-litres-4-accessoires-diamwood-14792895",
+        starter_pack_image2:
+          "https://cdn.manomano.com/images/images_products/4836393/T/15112730_1.jpg",
         starter_pack_price2: "53",
         starter_pack_name3: "Protective glove",
-        starter_pack_url3: "https://www.manomano.fr/p/gant-ninja-ice-special-froid-double-couche-singer-taille-9-ni00l-34195679?model_id=6132838",
-        starter_pack_image3: "https://cdn.manomano.com/images/images_products/12/T/7604_1.jpg",
+        starter_pack_url3:
+          "https://www.manomano.fr/p/gant-ninja-ice-special-froid-double-couche-singer-taille-9-ni00l-34195679?model_id=6132838",
+        starter_pack_image3:
+          "https://cdn.manomano.com/images/images_products/12/T/7604_1.jpg",
         starter_pack_price3: "5",
         starter_pack_name4: "Tile adhesive",
-        starter_pack_url4: "https://www.manomano.fr/p/colle-a-carrelage-en-pate-sika-sikaceram-cuisine-et-bain-38891171?model_id=9043493",
-        starter_pack_image4: "https://cdn.manomano.com/images/images_products/191104/T/37527605_1.jpg",
+        starter_pack_url4:
+          "https://www.manomano.fr/p/colle-a-carrelage-en-pate-sika-sikaceram-cuisine-et-bain-38891171?model_id=9043493",
+        starter_pack_image4:
+          "https://cdn.manomano.com/images/images_products/191104/T/37527605_1.jpg",
         starter_pack_price4: "31",
+        starter_pack_total: "140",
       },
     ],
   },
@@ -141,21 +170,31 @@ const room = [
         conseil:
           "https://www.manomano.fr/conseil/comment-choisir-une-peinture-murs-et-plafonds-2531",
         starter_pack_name1: "Protective glove",
-        starter_pack_url1: "https://www.manomano.fr/p/gant-ninja-ice-special-froid-double-couche-singer-taille-9-ni00l-34195679?model_id=6132838",
-        starter_pack_image1: "https://cdn.manomano.com/images/images_products/12/T/7604_1.jpg",
+        starter_pack_url1:
+          "https://www.manomano.fr/p/gant-ninja-ice-special-froid-double-couche-singer-taille-9-ni00l-34195679?model_id=6132838",
+        starter_pack_image1:
+          "https://cdn.manomano.com/images/images_products/12/T/7604_1.jpg",
         starter_pack_price1: "5",
         starter_pack_name2: "Drip roller kit",
-        starter_pack_url2: "https://www.manomano.fr/p/ensemble-de-rouleaux-a-peinture-anti-gouttes-pour-nouveau-26782071?model_id=26762962",
-        starter_pack_image2: "https://cdn.manomano.com/images/images_products/15616041/T/27078441_1.jpg",
+        starter_pack_url2:
+          "https://www.manomano.fr/p/ensemble-de-rouleaux-a-peinture-anti-gouttes-pour-nouveau-26782071?model_id=26762962",
+        starter_pack_image2:
+          "https://cdn.manomano.com/images/images_products/15616041/T/27078441_1.jpg",
         starter_pack_price2: "28",
         starter_pack_name3: "Masking tape",
-        starter_pack_url3: "https://www.manomano.fr/p/ruban-de-masquage-50-mm-x-50-m-6350214",
-        starter_pack_image3: "https://cdn.manomano.com/images/images_products/14312071/T/28089732_1.jpg",
+        starter_pack_url3:
+          "https://www.manomano.fr/p/ruban-de-masquage-50-mm-x-50-m-6350214",
+        starter_pack_image3:
+          "https://cdn.manomano.com/images/images_products/14312071/T/28089732_1.jpg",
         starter_pack_price3: "7",
         starter_pack_name4: "Paint tarpaulin",
-        starter_pack_url4: "https://www.manomano.fr/catalogue/p/bache-peinture-80-g-m-2-x-3-m-protection-peinture-bache-de-sol-bache-plastique-protection-sol-et-meubles-23413927",
-        starter_pack_image4: "https://cdn.manomano.com/images/images_products/14132639/T/23710826_1.jpg",
+        starter_pack_url4:
+          "https://www.manomano.fr/catalogue/p/bache-peinture-80-g-m-2-x-3-m-protection-peinture-bache-de-sol-bache-plastique-protection-sol-et-meubles-23413927",
+        starter_pack_image4:
+          "https://cdn.manomano.com/images/images_products/14132639/T/23710826_1.jpg",
         starter_pack_price4: "24",
+        starter_pack_total: "64",
+
       },
       {
         material_name: "Wallpaper",
@@ -178,21 +217,31 @@ const room = [
         conseil:
           "https://www.manomano.fr/conseil/comment-choisir-son-papier-peint-1-2815",
         starter_pack_name1: "Wallpaper hanging kit",
-        starter_pack_url1: "https://www.manomano.fr/p/paris-prix---kit-complet-pour-pose-de-papier-peint-35081895",
-        starter_pack_image1: "https://cdn.manomano.com/images/images_products/18971068/T/33681594_1.jpg",
+        starter_pack_url1:
+          "https://www.manomano.fr/p/paris-prix---kit-complet-pour-pose-de-papier-peint-35081895",
+        starter_pack_image1:
+          "https://cdn.manomano.com/images/images_products/18971068/T/33681594_1.jpg",
         starter_pack_price1: "44",
         starter_pack_name2: "Cutter",
-        starter_pack_url2: "https://www.manomano.fr/p/cutter-bi-matiere-largeur-lame-25mm-427296",
-        starter_pack_image2: "https://cdn.manomano.com/images/images_products/6145579/T/24134530_1.jpg",
+        starter_pack_url2:
+          "https://www.manomano.fr/p/cutter-bi-matiere-largeur-lame-25mm-427296",
+        starter_pack_image2:
+          "https://cdn.manomano.com/images/images_products/6145579/T/24134530_1.jpg",
         starter_pack_price2: "11",
         starter_pack_name3: "Paste wallpaper",
-        starter_pack_url3: "https://www.manomano.fr/p/colle-papiers-peints-indicateur-colore-1kg-6080900",
-        starter_pack_image3: "https://cdn.manomano.com/images/images_products/356975/T/6294936_1.jpg",
+        starter_pack_url3:
+          "https://www.manomano.fr/p/colle-papiers-peints-indicateur-colore-1kg-6080900",
+        starter_pack_image3:
+          "https://cdn.manomano.com/images/images_products/356975/T/6294936_1.jpg",
         starter_pack_price3: "6",
         starter_pack_name4: "Cutting rule",
-        starter_pack_url4: "https://www.manomano.fr/p/regle-de-coupe-parfecoup-22483316?model_id=22473569",
-        starter_pack_image4: "https://cdn.manomano.com/images/images_products/33733/T/22789695_1.jpg",
+        starter_pack_url4:
+          "https://www.manomano.fr/p/regle-de-coupe-parfecoup-22483316?model_id=22473569",
+        starter_pack_image4:
+          "https://cdn.manomano.com/images/images_products/33733/T/22789695_1.jpg",
         starter_pack_price4: "35",
+        starter_pack_total: "96",
+
       },
     ],
   },
@@ -221,21 +270,29 @@ const room = [
         conseil:
           "https://www.manomano.fr/conseil/comment-choisir-un-radiateur-a-inertie-4702",
         starter_pack_name1: "Magnetic level",
-        starter_pack_url1: "https://www.manomano.fr/p/niveaux-magnetiques-fatmax-i-beam-60cm-stanley-1-43554-6264752?model_id=1763044",
-        starter_pack_image1: "https://cdn.manomano.com/images/images_products/6145579/T/24134493_1.jpg",
+        starter_pack_url1:
+          "https://www.manomano.fr/p/niveaux-magnetiques-fatmax-i-beam-60cm-stanley-1-43554-6264752?model_id=1763044",
+        starter_pack_image1:
+          "https://cdn.manomano.com/images/images_products/6145579/T/24134493_1.jpg",
         starter_pack_price1: "22",
         starter_pack_name2: "Electrician screwdriver",
-        starter_pack_url2: "https://www.manomano.fr/p/lot-de-2-tournevis-testeur-de-courant190mm-140mm-40416286",
-        starter_pack_image2: "https://cdn.manomano.com/images/images_products/11304659/T/19322867_1.jpg",
+        starter_pack_url2:
+          "https://www.manomano.fr/p/lot-de-2-tournevis-testeur-de-courant190mm-140mm-40416286",
+        starter_pack_image2:
+          "https://cdn.manomano.com/images/images_products/11304659/T/19322867_1.jpg",
         starter_pack_price2: "7",
         starter_pack_name3: "Molly metal anklet",
-        starter_pack_url3: "https://www.manomano.fr/p/cheville-metallique-a-expansion-avec-vis-molly-classique-boite-538524?model_id=12516325",
-        starter_pack_image3: "https://cdn.manomano.com/images/images_products/203447/T/14858981_1.jpg",
+        starter_pack_url3:
+          "https://www.manomano.fr/p/cheville-metallique-a-expansion-avec-vis-molly-classique-boite-538524?model_id=12516325",
+        starter_pack_image3:
+          "https://cdn.manomano.com/images/images_products/203447/T/14858981_1.jpg",
         starter_pack_price3: "18",
         starter_pack_name4: "",
         starter_pack_url4: "",
         starter_pack_image4: "",
         starter_pack_price4: "",
+        starter_pack_total: "47",
+
       },
       {
         material_name: "Fan Heater",
@@ -257,22 +314,28 @@ const room = [
         price4: "99",
         conseil:
           "https://www.manomano.fr/conseil/comment-choisir-un-chauffage-d-appoint-de-salle-de-bains-3428",
-        starter_pack_name1: "",
-        starter_pack_url1: "",
-        starter_pack_image1: "",
-        starter_pack_price1: "",
-        starter_pack_name2: "",
-        starter_pack_url2: "",
-        starter_pack_image2: "",
-        starter_pack_price2: "",
-        starter_pack_name3: "",
-        starter_pack_url3: "",
-        starter_pack_image3: "",
-        starter_pack_price3: "",
+        starter_pack_name1: "Magnetic level",
+        starter_pack_url1:
+          "https://www.manomano.fr/p/niveaux-magnetiques-fatmax-i-beam-60cm-stanley-1-43554-6264752?model_id=1763044",
+        starter_pack_image1:
+          "https://cdn.manomano.com/images/images_products/6145579/T/24134493_1.jpg",
+        starter_pack_price1: "22",
+        starter_pack_name2: "Electrician screwdriver",
+        starter_pack_url2:
+          "https://www.manomano.fr/p/lot-de-2-tournevis-testeur-de-courant190mm-140mm-40416286",
+        starter_pack_image2:
+          "https://cdn.manomano.com/images/images_products/11304659/T/19322867_1.jpg",
+        starter_pack_price2: "7",
+        starter_pack_name3: "Molly metal anklet",
+        starter_pack_url3:
+          "https://www.manomano.fr/p/cheville-metallique-a-expansion-avec-vis-molly-classique-boite-538524?model_id=12516325",
+        starter_pack_image3:
+          "https://cdn.manomano.com/images/images_products/203447/T/14858981_1.jpg",
         starter_pack_name4: "",
         starter_pack_url4: "",
         starter_pack_image4: "",
         starter_pack_price4: "",
+        starter_pack_total: "47",
       },
     ],
   },

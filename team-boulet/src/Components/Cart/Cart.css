@@ -1,0 +1,26 @@
+.main-container1 {
+  background-color: #ffffff;
+  color: black;
+  height: 100%;
+  width: 90vw;
+  margin: 5vh 5vw;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.product-line, .total {
+  margin-top: 1rem;
+}
+
+h2 {
+  text-align: center;
+}
+h3 {
+  margin-top: 2rem;
+}
