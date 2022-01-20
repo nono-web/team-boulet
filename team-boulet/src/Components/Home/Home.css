@@ -42,13 +42,14 @@
 
 .rooms:hover {
   border: 1px solid var(--darkBlue);
+  cursor: pointer;
 }
 
 .button-sub {
   border: 1px solid var(--ligthBlue);
   padding: 12px;
   background-color: var(--ligthBlue);
-
+  cursor: pointer;
 }
 
 
