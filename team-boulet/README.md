@@ -42,3 +42,5 @@ import room from "../../data";
         ))}
       </div>
     </>
+cd team-boulet
+npm start
