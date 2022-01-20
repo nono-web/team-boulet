@@ -21,15 +21,14 @@ const CrossSelling = () => {
   let [input17, setInput17] = useState(true);
   let [input18, setInput18] = useState(true);
 
-  const { choice1, choice2, choice3, setPackage1, setPackage2, setPackage3 } = useApp();
+  const { choice1, choice2, choice3, setPackage1, setPackage2, setPackage3 } =
+    useApp();
 
   useEffect(() => {
-    setPackage1('0');
-    setPackage2('0');
-    setPackage3('0');
-    
+    setPackage1("0");
+    setPackage2("0");
+    setPackage3("0");
   }, []);
-  
 
   const navigate = useNavigate();
 
@@ -37,90 +36,95 @@ const CrossSelling = () => {
     <div>
       <CheckoutSteps step1 step2 step3 step4></CheckoutSteps>
 
-      <div className="main-container1">
-        <h1>Need some basic tools?</h1>
+      <div className="main-container2">
+      <h1 className="m-h5">Need some basic tools?</h1>
         <div className="option-container1">
           {room[0].materials
             .filter((e) => e.material_name === choice1)
             .map((el) => (
-              <>
-                <h3>Starter Pack {el.material_name}</h3>
+              <div className="option-container4">
+                <h4 className="title2">Starter Pack {el.material_name}</h4>
+                <div className="option-container3">
                   <label for="name">I want it all</label>
                   <input
                     type="checkbox"
                     checked={input}
                     onChange={() => setInput(!input)}
-                  /></>
+                  />
+                </div>
+              </div>
             ))}
           {room[0].materials
             .filter((e) => e.material_name === choice1)
             .map((el) => (
               <div>
-                <div className="products-container1">
-                      <a
-                        target="_blank"
-                        href={el.starter_pack_url1}
-                        rel="noreferrer"
-                      >
-                        <img src={el.starter_pack_image1} alt=""></img>
-                      </a>
-                      <h3>{el.starter_pack_name1}</h3>
-                      <p>Price: {el.starter_pack_price1}€</p>
-                      <input
-                        type="checkbox"
-                        checked={input18}
-                        onChange={() => setInput18(!input18)}
-                      />
-                    </div>
-                    <div className="product-container1">
-                      <a
-                        target="_blank"
-                        href={el.starter_pack_url2}
-                        rel="noreferrer"
-                      >
-                        <img src={el.starter_pack_image2} alt=""></img>
-                      </a>
-                      <h3>{el.starter_pack_name2}</h3>
-                      <p>Price: {el.starter_pack_price2}€</p>
-                      <input
-                        type="checkbox"
-                        checked={input1}
-                        onChange={() => setInput1(!input1)}
-                      />
-                    </div>
-                    <div className="product-container1">
-                      <a
-                        target="_blank"
-                        href={el.starter_pack_url3}
-                        rel="noreferrer"
-                      >
-                        <img src={el.starter_pack_image3} alt=""></img>
-                      </a>
-                      <h3>{el.starter_pack_name3}</h3>
-                      <p>Price: {el.starter_pack_price3}€</p>
-                      <input
-                        type="checkbox"
-                        checked={input2}
-                        onChange={() => setInput2(!input2)}
-                      />
-                    </div>
-                    <div className="product-container1">
-                      <a
-                        target="_blank"
-                        href={el.starter_pack_url4}
-                        rel="noreferrer"
-                      >
-                        <img src={el.starter_pack_image4} alt=""></img>
-                      </a>
-                      <h3>{el.starter_pack_name4}</h3>
-                      <p>Price: {el.starter_pack_price4}€</p>
-                      <input
-                        type="checkbox"
-                        checked={input3}
-                        onChange={() => setInput3(!input3)}
-                      />
-                    </div>
-                <button onClick={()=>setPackage1(el.starter_pack_total)}>Add to Cart</button>
+                <div className="product-container1">
+                  <a
+                    target="_blank"
+                    href={el.starter_pack_url1}
+                    rel="noreferrer"
+                  >
+                    <img src={el.starter_pack_image1} alt=""></img>
+                  </a>
+                  <h4 className="title1">{el.starter_pack_name1}</h4>
+                  <p>Price: {el.starter_pack_price1}€</p>
+                  <input
+                    type="checkbox"
+                    checked={input18}
+                    onChange={() => setInput18(!input18)}
+                  />
+                </div>
+                <div className="product-container1">
+                  <a
+                    target="_blank"
+                    href={el.starter_pack_url2}
+                    rel="noreferrer"
+                  >
+                    <img src={el.starter_pack_image2} alt=""></img>
+                  </a>
+                  <h4 className="title1">{el.starter_pack_name2}</h4>
+                  <p>Price: {el.starter_pack_price2}€</p>
+                  <input
+                    type="checkbox"
+                    checked={input1}
+                    onChange={() => setInput1(!input1)}
+                  />
+                </div>
+                <div className="product-container1">
+                  <a
+                    target="_blank"
+                    href={el.starter_pack_url3}
+                    rel="noreferrer"
+                  >
+                    <img src={el.starter_pack_image3} alt=""></img>
+                  </a>
+                  <h4 className="title1">{el.starter_pack_name3}</h4>
+                  <p>Price: {el.starter_pack_price3}€</p>
+                  <input
+                    type="checkbox"
+                    checked={input2}
+                    onChange={() => setInput2(!input2)}
+                  />
+                </div>
+                <div className="product-container1">
+                  <a
+                    target="_blank"
+                    href={el.starter_pack_url4}
+                    rel="noreferrer"
+                  >
+                    <img src={el.starter_pack_image4} alt=""></img>
+                  </a>
+                  <h4 className="title1">{el.starter_pack_name4}</h4>
+                  <p>Price: {el.starter_pack_price4}€</p>
+                  <input
+                    type="checkbox"
+                    checked={input3}
+                    onChange={() => setInput3(!input3)}
+                  />
+                </div>
+                <button onClick={() => setPackage1(el.starter_pack_total)}>
+                  Add to Cart
+                </button>
               </div>
             ))}
         </div>{" "}
@@ -128,8 +132,8 @@ const CrossSelling = () => {
           {room[1].materials
             .filter((e) => e.material_name === choice2)
             .map((el) => (
-              <div className="option-container2">
-                <h3>Starter Pack {el.material_name}</h3>
+              <div className="option-container4">
+                <h4 className="title2">Starter Pack {el.material_name}</h4>
                 <div className="option-container3">
                   <label for="name">I want it all</label>
                   <input
@@ -144,155 +148,156 @@ const CrossSelling = () => {
             .filter((e) => e.material_name === choice2)
             .map((el) => (
               <div>
-                <div className="products-container1">
-                  <div className="product-container2">
-                    <a
-                      target="_blank"
-                      href={el.starter_pack_url1}
-                      rel="noreferrer"
-                    >
-                      <img src={el.starter_pack_image1} alt=""></img>
-                    </a>
-                    <h3>{el.starter_pack_name1}</h3>
-                    <p>Price: {el.starter_pack_price1}€</p>
-                    <input
-                      type="checkbox"
-                      checked={input5}
-                      onChange={() => setInput5(!input5)}
-                    />
-                  </div>
-                  <div className="product-container2">
-                    <a
-                      target="_blank"
-                      href={el.starter_pack_url2}
-                      rel="noreferrer"
-                    >
-                      <img src={el.starter_pack_image2} alt=""></img>
-                    </a>
-                    <h3>{el.starter_pack_name2}</h3>
-                    <p>Price: {el.starter_pack_price2}€</p>
-                    <input
-                      type="checkbox"
-                      checked={input6}
-                      onChange={() => setInput6(!input6)}
-                    />
-                  </div>
-                  <div className="product-container2">
-                    <a
-                      target="_blank"
-                      href={el.starter_pack_url3}
-                      rel="noreferrer"
-                    >
-                      <img src={el.starter_pack_image3} alt=""></img>
-                    </a>
-                    <h3>{el.starter_pack_name3}</h3>
-                    <p>Price: {el.starter_pack_price3}€</p>
-                    <input
-                      type="checkbox"
-                      checked={input7}
-                      onChange={() => setInput7(!input7)}
-                    />
-                  </div>
-                  <div className="product-container2">
-                    <a
-                      target="_blank"
-                      href={el.starter_pack_url4}
-                      rel="noreferrer"
-                    >
-                      <img src={el.starter_pack_image4} alt=""></img>
-                    </a>
-                    <h3>{el.starter_pack_name4}</h3>
-                    <p>Price: {el.starter_pack_price4}€</p>
-                    <input
-                      type="checkbox"
-                      checked={input8}
-                      onChange={() => setInput8(!input8)}
-                    />
-                  </div>
+                <div className="product-container1">
+                  <a
+                    target="_blank"
+                    href={el.starter_pack_url1}
+                    rel="noreferrer"
+                  >
+                    <img src={el.starter_pack_image1} alt=""></img>
+                  </a>
+                  <h4 className="title1">{el.starter_pack_name1}</h4>
+                  <p>Price: {el.starter_pack_price1}€</p>
+                  <input
+                    type="checkbox"
+                    checked={input5}
+                    onChange={() => setInput5(!input5)}
+                  />
                 </div>
-                <button onClick={()=>setPackage2(el.starter_pack_total)}>Add to Cart</button>
+                <div className="product-container1">
+                  <a
+                    target="_blank"
+                    href={el.starter_pack_url2}
+                    rel="noreferrer"
+                  >
+                    <img src={el.starter_pack_image2} alt=""></img>
+                  </a>
+                  <h4 className="title1">{el.starter_pack_name2}</h4>
+                  <p>Price: {el.starter_pack_price2}€</p>
+                  <input
+                    type="checkbox"
+                    checked={input6}
+                    onChange={() => setInput6(!input6)}
+                  />
+                </div>
+                <div className="product-container1">
+                  <a
+                    target="_blank"
+                    href={el.starter_pack_url3}
+                    rel="noreferrer"
+                  >
+                    <img src={el.starter_pack_image3} alt=""></img>
+                  </a>
+                  <h4 className="title1">{el.starter_pack_name3}</h4>
+                  <p>Price: {el.starter_pack_price3}€</p>
+                  <input
+                    type="checkbox"
+                    checked={input7}
+                    onChange={() => setInput7(!input7)}
+                  />
+                </div>
+                <div className="product-container1">
+                  <a
+                    target="_blank"
+                    href={el.starter_pack_url4}
+                    rel="noreferrer"
+                  >
+                    <img src={el.starter_pack_image4} alt=""></img>
+                  </a>
+                  <h4 className="title1">{el.starter_pack_name4}</h4>
+                  <p>Price: {el.starter_pack_price4}€</p>
+                  <input
+                    type="checkbox"
+                    checked={input8}
+                    onChange={() => setInput8(!input8)}
+                  />
+                </div>
+
+                <button onClick={() => setPackage2(el.starter_pack_total)}>
+                  Add to Cart
+                </button>
               </div>
             ))}
         </div>
         <div className="option-container1">
-          <div className="option-container1">
-            {room[2].materials
-              .filter((e) => e.material_name === choice3)
-              .map((el) => (
-                <div className="option-container2">
-                  <h3>Starter Pack {el.material_name}</h3>
-                  <div className="option-container3">
-                    <label for="name">I want it all</label>
-                    <input
-                      type="checkbox"
-                      checked={input14}
-                      onChange={() => setInput14(!input14)}
-                    />
-                  </div>
+          {room[2].materials
+            .filter((e) => e.material_name === choice3)
+            .map((el) => (
+              <div className="option-container4">
+                <h4 className="title2">Starter Pack {el.material_name}</h4>
+                <div className="option-container3">
+                  <label for="name">I want it all</label>
+                  <input
+                    type="checkbox"
+                    checked={input14}
+                    onChange={() => setInput14(!input14)}
+                  />
                 </div>
-              ))}
-            {room[2].materials
-              .filter((e) => e.material_name === choice3)
-              .map((el) => (
-                <div>
-                  <div className="products-container1">
-                    <div className="product-container2">
-                      <a
-                        target="_blank"
-                        href={el.starter_pack_url1}
-                        rel="noreferrer"
-                      >
-                        <img src={el.starter_pack_image1} alt=""></img>
-                      </a>
-                      <h3>{el.starter_pack_name1}</h3>
-                      <p>Price: {el.starter_pack_price1}€</p>
-                      <input
-                        type="checkbox"
-                        checked={input15}
-                        onChange={() => setInput15(!input15)}
-                      />
-                    </div>
-                    <div className="product-container2">
-                      <a
-                        target="_blank"
-                        href={el.starter_pack_url2}
-                        rel="noreferrer"
-                      >
-                        <img src={el.starter_pack_image2} alt=""></img>
-                      </a>
-                      <h3>{el.starter_pack_name2}</h3>
-                      <p>Price: {el.starter_pack_price2}€</p>
-                      <input
-                        type="checkbox"
-                        checked={input16}
-                        onChange={() => setInput16(!input16)}
-                      />
-                    </div>
-                    <div className="product-container2">
-                      <a
-                        target="_blank"
-                        href={el.starter_pack_url3}
-                        rel="noreferrer"
-                      >
-                        <img src={el.starter_pack_image3} alt=""></img>
-                      </a>
-                      <h3>{el.starter_pack_name3}</h3>
-                      <p>Price: {el.starter_pack_price3}€</p>
-                      <input
-                        type="checkbox"
-                        checked={input17}
-                        onChange={() => setInput17(!input17)}
-                      />
-                    </div>
-                  </div>
-                  <button onClick={()=>setPackage3(el.starter_pack_total)}>Add to Cart</button>
+              </div>
+            ))}
+          {room[2].materials
+            .filter((e) => e.material_name === choice3)
+            .map((el) => (
+              <div>
+                <div className="product-container1">
+                  <a
+                    target="_blank"
+                    href={el.starter_pack_url1}
+                    rel="noreferrer"
+                  >
+                    <img src={el.starter_pack_image1} alt=""></img>
+                  </a>
+                  <h4 className="title1">{el.starter_pack_name1}</h4>
+                  <p>Price: {el.starter_pack_price1}€</p>
+                  <input
+                    type="checkbox"
+                    checked={input15}
+                    onChange={() => setInput15(!input15)}
+                  />
                 </div>
-              ))}
-          </div>
-        </div>
+                <div className="product-container1">
+                  <a
+                    target="_blank"
+                    href={el.starter_pack_url2}
+                    rel="noreferrer"
+                  >
+                    <img src={el.starter_pack_image2} alt=""></img>
+                  </a>
+                  <h4 className="title1">{el.starter_pack_name2}</h4>
+                  <p>Price: {el.starter_pack_price2}€</p>
+                  <input
+                    type="checkbox"
+                    checked={input16}
+                    onChange={() => setInput16(!input16)}
+                  />
+                </div>
+                <div className="product-container1">
+                  <a
+                    target="_blank"
+                    href={el.starter_pack_url3}
+                    rel="noreferrer"
+                  >
+                    <img src={el.starter_pack_image3} alt=""></img>
+                  </a>
+                  <h4 className="title1">{el.starter_pack_name3}</h4>
+                  <p>Price: {el.starter_pack_price3}€</p>
+                  <input
+                    type="checkbox"
+                    checked={input17}
+                    onChange={() => setInput17(!input17)}
+                  />
+                </div>
+                <button onClick={() => setPackage3(el.starter_pack_total)}>
+                  Add to Cart
+                </button>
+              </div>
+            ))}
+        </div>{" "}
+        <div className="rooms-container">         
         <button className="button1" onClick={() => navigate('/coaching')}>
             Let's DIY
           </button>
+        </div>
       </div>
     </div>
   );
