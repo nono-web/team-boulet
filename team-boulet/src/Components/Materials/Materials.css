@@ -4,6 +4,10 @@ body {
     background-size: 200%; 
 }
 
+.m-h1 {
+margin-top: 20px;
+}
+
 .button {
     border: 1px solid var(--ligthBlue);
     padding: 5px;
@@ -77,10 +81,10 @@ body {
     background-color: var(--ligthBlue);
     color: white;
     font-weight: bold;
-    border-radius: 2rem;
     width: 65%;
     padding: 1rem;
     margin: 2rem;
+    border: 1px solid var(--ligthBlue);
 }
 
 .button1:hover {

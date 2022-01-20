@@ -31,7 +31,7 @@ const Materials = () => {
   return (
     <div className="m">
       <div className="m-body">
-        <h1> What will I do in this room ? </h1>
+        <h1 className='m-h1'> What will I do in this room ? </h1>
         <div className="m-button-container">
           <button className="m-button" onClick={() => setShowButton(!showButton)}>
           Floor
