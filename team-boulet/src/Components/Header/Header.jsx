@@ -4,15 +4,11 @@ import './Header.css';
 
 const Header = () => {
   return (
-<div className="h-fond">
-<div >
-  <img className="m-img" src={logo} alt="ManoMano" />
-</div>
-</div>
-
-
-
-
+  <div className="h-fond">
+    <div >
+      <img className="m-img" src={logo} alt="ManoMano" />
+    </div>
+  </div>
   );
 };
 
