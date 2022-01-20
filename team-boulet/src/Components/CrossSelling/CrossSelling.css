@@ -48,3 +48,7 @@ label[for="name"] {
     font-weight: bold;
     font-size: 1em;
 }
+
+button{
+    cursor: pointer;
+}
