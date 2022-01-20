@@ -26,7 +26,6 @@ body {
     display: flex;
     justify-content: space-around;
     font-size: 0.75rem;
-    margin-bottom: 0;
  }
 
  .product-container img{
@@ -34,7 +33,5 @@ body {
 }
 
 .conseil, a {
-    margin-top: 0;
-    padding-top: 0;
     font-size: 0.8rem;
 }
