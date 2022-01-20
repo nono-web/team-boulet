@@ -1,5 +1,6 @@
 import React from 'react';
 import room from '../../data';
+import CheckoutSteps from '../CheckoutSteps/CheckoutSteps';
 import './Home.css';
 
 const homerooms = ['Bedroom', 'Bathroom', 'Kitchen', 'Living room', 'Garden'];
@@ -13,7 +14,10 @@ const selectRoom = {}
 
 const Home = () => {
   return (
+    <div>
+    <CheckoutSteps step1></CheckoutSteps>
     <div className='main-container'>
+ 
 
       <h1 class='titre-home'>What is my next DIY project?</h1>
       <p class='txt-intro'>Get all the materials you need for your next project and tips on how to do it like a pro!</p>
@@ -28,6 +32,7 @@ const Home = () => {
       <button type='submit' className='button-sub' onChange={handleChangeLetsgo}>Let's go !</button>
       </div>
 
+    </div>
     </div>
   )};
 
