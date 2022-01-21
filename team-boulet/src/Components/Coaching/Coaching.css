@@ -1,6 +1,7 @@
 .m-h1 {
     margin-top: 20px;
-    color:var(--darkBlue)
+    font-size: 1.4rem;
+    color: var(--darkBlue);
     }
 
 .m-h2{
