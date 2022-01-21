@@ -6,7 +6,7 @@
   margin: 3vh 5vw;
   padding: 20px;
   font-family: 'Roboto', sans-serif;
-  color: black;
+  color: var(--darkBlue);
   background-color: #fff;
 }
 

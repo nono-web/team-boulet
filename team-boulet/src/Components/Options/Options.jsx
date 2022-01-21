@@ -296,7 +296,7 @@ const navigate = useNavigate();
             ))}
         </div>
         <div className="Letsgo">
-          <button className="button-sub1" onClick={() => navigate("/cross-selling")}>
+          <button className="button-sub1" className='rooms-container' className='button-sub' onClick={() => navigate("/cross-selling")}>
             Let's DIY
           </button>
         </div>
