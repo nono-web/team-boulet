@@ -29,7 +29,7 @@ const Materials = () => {
 
   const handleSubmitMaterials = () => {
     isSelected1 ? setChoice1("Wooden Floor") : isSelected2 ? setChoice1("Carpet") : setChoice1("Floor tile"); 
-    isSelected4 ? setChoice2("Wallpaper") : setChoice2("Paint");
+    isSelected4 ? setChoice2("Paint") : setChoice2("Wallpaper");
     isSelected7 ? setChoice3("Inertia Radiator") : setChoice3("Fan Heater");
     navigator('/options');
   }
