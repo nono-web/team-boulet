@@ -8,8 +8,8 @@
 }
 
 .option-container {
-  background-color: var(--ligthBlue);
-  color: white;
+  background-color: #eefbfa;
+  color: black;
   width: 100%;
   height: 16rem;
   margin: 0.75rem auto;
