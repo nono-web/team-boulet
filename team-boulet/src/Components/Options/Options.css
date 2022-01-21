@@ -3,7 +3,7 @@
   background-color: #ffffff;
 
   color: var(--darkBlue);
-  height: 100vh;
+  height: 100%;
   width: 90vw;
   margin: 5vh 5vw;
   display: flex;
@@ -98,6 +98,7 @@ input{
   width: 300px;
   margin-left: auto;
   margin-right: auto;
+}
 
 label[for="name"] {
 

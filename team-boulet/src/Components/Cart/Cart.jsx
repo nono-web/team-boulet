@@ -63,7 +63,7 @@ const Cart = () => {
           <h3>Total {total} € </h3>
         </div>
 
-        <button className="button1" onClick={()=>navigate('/End')}>
+        <button className="button10" onClick={()=>navigate('/End')}>
             Let's DIY
           </button>
 
