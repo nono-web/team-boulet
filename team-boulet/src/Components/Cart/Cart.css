@@ -1,6 +1,6 @@
 .main-container1 {
   background-color: #ffffff;
-  color: #0c193a;
+  color: var(--darkBlue);
   height: 100%;
   width: 90vw;
   margin: 5vh 5vw;

@@ -42,12 +42,32 @@
     box-shadow: 5px 5px 5px #00eccd;
 }
 
-.title {
+.title1 {
+    height: 36px;
+    text-align: center;
+    background: #34E4D6;
+    color: #fff;
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 14px;
+}
+
+.title2 {
     height: 36px;
     text-align: center;
     background: #29b9ad;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 14px;
+}
+
+.title3 {
+    height: 36px;
+    text-align: center;
+    background: #0E9A8E;
+    color: #fff;
+    font-weight: 700;
     line-height: 36px;
     font-size: 14px;
 }
