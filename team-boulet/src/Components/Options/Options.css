@@ -2,7 +2,7 @@
   background-color: #ffffff;
 
   color: var(--darkBlue);
-  height: auto;
+  height: 100vh;
   width: 90vw;
   margin: 5vh 5vw;
 }
@@ -11,7 +11,7 @@
   background-color: var(--ligthBlue);
   color: white;
   width: 100%;
-  height: 15rem;
+  height: 16rem;
   margin: 0.75rem auto;
   padding: 0.5rem;
 }
