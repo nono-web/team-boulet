@@ -71,7 +71,7 @@ h2 {
 h3 {
   margin-top: 2rem;
   padding: 2px 10px;
-  background-color: #0c193a;
+  background-color: #29b9ad;
   color: #fff;
 }
 
@@ -79,4 +79,19 @@ h3 {
   display: flex;
   justify-content: flex-end;
   margin: 10px;
+}
+
+.button10 {
+  background-color: var(--ligthBlue);
+  color: white;
+  font-weight: bold;
+  width: 85%;
+  padding: 1rem;
+  margin: 2rem;
+  border: 1px solid var(--ligthBlue);
+  font-size: 1.2rem;;
+}
+
+.button10:hover {
+  background-color: var(--darkBlue);
 }

@@ -33,26 +33,26 @@ const Coaching = () => {
     </div>
 
     <div className='m'>
-    <div className="m-body">
+    <div className="m-body5">
       <h1 className='m-h1'> Need some help ? </h1>
       <div className='services'>
   
         <div className="cards">
           <div onClick={selectPack1} className={isClick1 ? "card-selected" : "card"}>
-            <div className="title1">Mano Pack </div>
-            <div className="price">€ 5</div>
+            <div className="title10">Mano Pack </div>
+            <div className="price"> 5 €</div>
             <p className="p">Have the best advice from our expert before your project to organise ! </p>
           </div>
       
           <div onClick={selectPack2} className={isClick2 ? "card-selected" : "card"}>
             <div className="title2">Mano Mano Pack</div>
-            <div className="price">€ 50</div>
+            <div className="price">50 €</div>
             <p className="p">Use our hot line on Saturdays and Sundays if you have an issue in your project !</p> 
           </div>
   
           <div onClick={selectPack3} className={isClick3 ? "card-selected" : "card"}>
             <div className="title3">Mano Mano Mano Pack</div>
-            <div className="price">€ 150</div>
+            <div className="price"> 150 €</div>
             <p className="p">Be assisted by an expert at every step of the way on a 4h video call ! </p>
           </div>
   

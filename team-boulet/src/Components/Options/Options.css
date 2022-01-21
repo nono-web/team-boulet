@@ -3,7 +3,7 @@
   background-color: #ffffff;
 
   color: var(--darkBlue);
-  height: 100vh;
+  height: 100%;
   width: 90vw;
   margin: 5vh 5vw;
   display: flex;
