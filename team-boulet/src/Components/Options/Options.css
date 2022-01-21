@@ -48,9 +48,10 @@ a {
   margin-bottom: 0.5rem;
 }
 
-select{
+.label-filter{
   background-color: white;
   color: var(--darkBlue);
+  height: 1.5rem;
 }
 
 input{
@@ -97,4 +98,12 @@ input{
   width: 300px;
   margin-left: auto;
   margin-right: auto;
+
+label[for="name"] {
+
+    font-size: 1rem;
+    color: var(--darkBlue);
+    padding-left: 1.2em;
+    margin: 0.7rem;
+
 }

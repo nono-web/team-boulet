@@ -12,6 +12,7 @@
 
 .titre-home {
   font-size: 1.4rem;
+  color: var(--darkBlue);
 }
 
 .txt-intro{

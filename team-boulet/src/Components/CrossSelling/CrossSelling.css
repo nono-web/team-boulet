@@ -50,7 +50,7 @@
   margin-left: 0.5rem;
 }
 
-label[for="name"] {
+label[for="name1"] {
   font-size: 1.2rem;
   color: black;
   padding-left: 1.2em;
@@ -73,4 +73,11 @@ button {
   padding-left: 1rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
+}
+
+.addtocart {
+  background-color: var(--darkBlue);
+  color: white;
+  display: flex;
+  margin-left: 7rem;
 }

@@ -40,14 +40,14 @@ const Options = () => {
             ))}
             <div className="filter-calculate">
           <label for="floor">Filter:</label>
-          <select name="floor" id="floor">
+          <select className="label-filter" name="floor" id="floor">
             <option value="all">All</option>
             <option value="blonde">Blonde</option>
             <option value="honey">Honey</option>
             <option value="chevron">Chevron</option>
           </select>
           <form>
-            <label for="name">
+            <label for="calculate">
               m²(+/-10%)
               <input
                 type="text"
@@ -56,7 +56,7 @@ const Options = () => {
                 required
                 minlength="1"
                 maxlength="2"
-                size="4"
+                size="2"
                 placeholder={valueFloor}
                 value={valueFloor}
                 onChange={(e) => setValueFloor(e.target.value)}
@@ -135,25 +135,25 @@ const Options = () => {
             .map((el) => (
               <h3 className="product-category">{el.material_name}</h3>
             ))}
-         <div className="filter-calculate">
-          <label for="floor">Filter:</label>
-          <select name="floor" id="floor">
+        <div className="filter-calculate">
+          <label for="wall">Filter:</label>
+          <select className="label-filter" name="wall" id="wall">
             <option value="all">All</option>
             <option value="blue">Blue</option>
-            <option value="grey">Grey</option>
-            <option value="green ">Green</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
           </select>
           <form>
-            <label for="name">
+            <label for="calculate">
               m²(+/-10%)
               <input
                 type="text"
-                id="floor"
-                name="floor"
+                id="wall"
+                name="wall"
                 required
                 minlength="1"
                 maxlength="2"
-                size="4"
+                size="2"
                 placeholder={valueWall}
                 value={valueWall}
                 onChange={(e) => setValueWall(e.target.value)}

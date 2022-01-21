@@ -45,7 +45,7 @@ const CrossSelling = () => {
               <div className="option-container4">
                 <h4 className="title2">Starter Pack {el.material_name}</h4>
                 <div className="option-container3">
-                  <label for="name">I want it all</label>
+                  <label for="name1">I want it all</label>
                   <input
                     type="checkbox"
                     checked={input}
@@ -122,7 +122,7 @@ const CrossSelling = () => {
                     onChange={() => setInput3(!input3)}
                   />
                 </div>
-                <button onClick={() => setPackage1(el.starter_pack_total)}>
+                <button className="addtocart" onClick={() => setPackage1(el.starter_pack_total)}>
                   Add to Cart
                 </button>
               </div>
@@ -135,7 +135,7 @@ const CrossSelling = () => {
               <div className="option-container4">
                 <h4 className="title2">Starter Pack {el.material_name}</h4>
                 <div className="option-container3">
-                  <label for="name">I want it all</label>
+                  <label for="name1">I want it all</label>
                   <input
                     type="checkbox"
                     checked={input4}
@@ -213,7 +213,7 @@ const CrossSelling = () => {
                   />
                 </div>
 
-                <button onClick={() => setPackage2(el.starter_pack_total)}>
+                <button className="addtocart" onClick={() => setPackage2(el.starter_pack_total)}>
                   Add to Cart
                 </button>
               </div>
@@ -226,7 +226,7 @@ const CrossSelling = () => {
               <div className="option-container4">
                 <h4 className="title2">Starter Pack {el.material_name}</h4>
                 <div className="option-container3">
-                  <label for="name">I want it all</label>
+                  <label for="name1">I want it all</label>
                   <input
                     type="checkbox"
                     checked={input14}
@@ -287,14 +287,14 @@ const CrossSelling = () => {
                     onChange={() => setInput17(!input17)}
                   />
                 </div>
-                <button onClick={() => setPackage3(el.starter_pack_total)}>
+                <button className="addtocart" onClick={() => setPackage3(el.starter_pack_total)}>
                   Add to Cart
                 </button>
               </div>
             ))}
         </div>{" "}
         <div className="rooms-container">         
-        <button className="button1" onClick={() => navigate('/coaching')}>
+        <button className="button-sub" onClick={() => navigate('/coaching')}>
             Let's DIY
           </button>
         </div>
