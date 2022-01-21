@@ -40,7 +40,7 @@ const Materials = () => {
     <div className="m">
       <CheckoutSteps step1 step2></CheckoutSteps>
       <div className="main-container-home2">
-        <h1 className='m-h1'> What will I do in this room ? </h1>
+        <h1 className='m-h1'> What will I do in this room ?</h1>
         <div className="main-container-home-ones">
         <div className="m-button-container">
           <button className="m-button" onClick={() => setShowButton(!showButton)}>

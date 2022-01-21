@@ -93,6 +93,9 @@ font-size: 1.4rem ;
 
 .m-button:focus {
     background-color: var(--darkBlue);
+    color: white;
+    font-weight: bold;
+
 }
 
 .m-button:hover {

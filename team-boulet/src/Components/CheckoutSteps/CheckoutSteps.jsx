@@ -11,8 +11,8 @@ const navigate = useNavigate();
             <div className={props.step2 ? 'active' : ''} onClick={()=>navigate('/materials')}>Materials</div>
             <div className={props.step3 ? 'active' : ''} onClick={()=>navigate('/options')}>Options</div>
             <div className={props.step4 ? 'active' : ''} onClick={()=>navigate('/cross-selling')}>Packs</div>
-            <div className={props.step5 ? 'active' : ''} onClick={()=>navigate('/cart')}>Cart</div>
-            <div className={props.step6 ? 'active' : ''} onClick={()=>navigate('/coaching')}>Coaching</div>
+            <div className={props.step5 ? 'active' : ''} onClick={()=>navigate('/coaching')}>Coaching</div>
+            <div className={props.step6 ? 'active' : ''} onClick={()=>navigate('/cart')}>Cart</div>
         </div>
     )
 }
