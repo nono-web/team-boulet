@@ -122,7 +122,7 @@ const CrossSelling = () => {
                     onChange={() => setInput3(!input3)}
                   />
                 </div>
-                <button onClick={() => setPackage1(el.starter_pack_total)}>
+                <button className="addtocart" onClick={() => setPackage1(el.starter_pack_total)}>
                   Add to Cart
                 </button>
               </div>
@@ -213,7 +213,7 @@ const CrossSelling = () => {
                   />
                 </div>
 
-                <button onClick={() => setPackage2(el.starter_pack_total)}>
+                <button className="addtocart" onClick={() => setPackage2(el.starter_pack_total)}>
                   Add to Cart
                 </button>
               </div>
@@ -287,7 +287,7 @@ const CrossSelling = () => {
                     onChange={() => setInput17(!input17)}
                   />
                 </div>
-                <button onClick={() => setPackage3(el.starter_pack_total)}>
+                <button className="addtocart" onClick={() => setPackage3(el.starter_pack_total)}>
                   Add to Cart
                 </button>
               </div>
